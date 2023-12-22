@@ -13,7 +13,6 @@ const introData = {
         fourth: "I Create AI based apps"
     },
     description: "As a software developer, I design, code, and maintain software applications, ensuring their functionality and performance",
-    your_img: "https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/371310427_1043676253309174_5036321132221743078_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=3635dc&_nc_ohc=6AXhUefM3sIAX-7LJt3&_nc_ht=scontent.ftbs5-2.fna&oh=00_AfBwvFGiACM-tunAXbrLGUomZpVoKhu7tPuASPyKKtrgjg&oe=65864796",
 }
 
 const dataAbout = {
@@ -55,6 +54,7 @@ const services = [{
 ]
 
 const dataPortfolio = [{
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NLP_-_isometric.svg/1200px-NLP_-_isometric.svg.png",
         description: "Creation of Back-End software for logical-probabilistic methods of structural analysis of systems",
         link: "https://github.com/lazare1999/saos_app",
     }
