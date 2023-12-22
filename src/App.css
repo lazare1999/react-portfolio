@@ -1,0 +1,113 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Style the select element */
+select {
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  appearance: none; /* Remove default arrow in some browsers */
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* Style the options */
+option {
+  padding: 10px;
+}
+
+/* Style on hover/focus for better user experience */
+select:hover, select:focus {
+  border-color: #2196f3; /* Change to your preferred focus color */
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5); /* Change to your preferred box-shadow */
+}
+
+section {
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Set the main axis to column */
+  width: 100%;
+  padding: 1em 2em 1em 2em;
+}
+
+@media only screen and (max-width: 991px) {
+  .s_c {
+    padding-top: 40px;
+  }
+}
+
+.page-enter {
+  transform: translateY(100%);
+}
+
+.page-enter-active {
+  transform: translateY(0%);
+  transition: all 400ms ease-out;
+}
+
+.page-exit {
+  transform: translateY(0%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.page-exit-active {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  transform: translateY(-130%);
+  transition: all 400ms ease-out;
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1140px;
+  }
+}
