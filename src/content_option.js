@@ -55,7 +55,6 @@ const services = [{
 ]
 
 const dataPortfolio = [{
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NLP_-_isometric.svg/1200px-NLP_-_isometric.svg.png",
         description: "Creation of Back-End software for logical-probabilistic methods of structural analysis of systems",
         link: "https://github.com/lazare1999/saos_app",
     }
@@ -69,7 +68,7 @@ const contactConfig = {
     YOUR_TEMPLATE_ID: "template_id",
     YOUR_USER_ID: "user_id",
 };
-const socialprofils = {
+const socialProfiles = {
     github: "https://github.com/lazare1999",
     facebook: "https://www.facebook.com/michi.nio.1",
     linkedin: "https://www.linkedin.com/in/lazare-kvirtia-51b51a23b/",
@@ -84,6 +83,6 @@ export {
     services,
     introData,
     contactConfig,
-    socialprofils,
+    socialProfiles,
     logoText,
 }

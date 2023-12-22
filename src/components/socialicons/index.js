@@ -5,29 +5,29 @@ import {
   FaFacebookF,
   FaLinkedin,
 } from "react-icons/fa";
-import { socialprofils } from "../../content_option";
+import { socialProfiles } from "../../content_option";
 
 export const SocialIcons = () => {
   return (
     <div className="stick_follow_icon">
       <ul>
-        {socialprofils.github && (
+        {socialProfiles.github && (
           <li>
-            <a href={socialprofils.github}>
+            <a href={socialProfiles.github}>
               <FaGithub />
             </a>
           </li>
         )}
-        {socialprofils.facebook && (
+        {socialProfiles.facebook && (
           <li>
-            <a href={socialprofils.facebook}>
+            <a href={socialProfiles.facebook}>
               <FaFacebookF />
             </a>
           </li>
         )}
-        {socialprofils.linkedin && (
+        {socialProfiles.linkedin && (
           <li>
-            <a href={socialprofils.linkedin}>
+            <a href={socialProfiles.linkedin}>
               <FaLinkedin />
             </a>
           </li>
