@@ -51,60 +51,14 @@ const skills = [{
 const services = [{
         title: "Web development",
         description: "cool skills of web development",
-    }, {
-        title: "Web development",
-        description: "cool skills of web development",
-    }, {
-        title: "Web development",
-        description: "cool skills of web development",
-    }, {
-        title: "Web development",
-        description: "cool skills of web development",
-    }, {
-        title: "Web development",
-        description: "cool skills of web development",
-    }, {
-        title: "Web development",
-        description: "cool skills of web development",
-    }, {
-        title: "Web development",
-        description: "cool skills of web development",
-    }
+    },
 ]
 
 const dataPortfolio = [{
         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NLP_-_isometric.svg/1200px-NLP_-_isometric.svg.png",
         description: "Creation of Back-End software for logical-probabilistic methods of structural analysis of systems",
         link: "https://github.com/lazare1999/saos_app",
-    }, {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NLP_-_isometric.svg/1200px-NLP_-_isometric.svg.png",
-        description: "Creation of Back-End software for logical-probabilistic methods of structural analysis of systems",
-        link: "https://github.com/lazare1999/saos_app",
-    }, {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NLP_-_isometric.svg/1200px-NLP_-_isometric.svg.png",
-        description: "Creation of Back-End software for logical-probabilistic methods of structural analysis of systems",
-        link: "https://github.com/lazare1999/saos_app",
-    }, {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NLP_-_isometric.svg/1200px-NLP_-_isometric.svg.png",
-        description: "Creation of Back-End software for logical-probabilistic methods of structural analysis of systems",
-        link: "https://github.com/lazare1999/saos_app",
-    }, {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NLP_-_isometric.svg/1200px-NLP_-_isometric.svg.png",
-        description: "Creation of Back-End software for logical-probabilistic methods of structural analysis of systems",
-        link: "https://github.com/lazare1999/saos_app",
-    }, {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NLP_-_isometric.svg/1200px-NLP_-_isometric.svg.png",
-        description: "Creation of Back-End software for logical-probabilistic methods of structural analysis of systems",
-        link: "https://github.com/lazare1999/saos_app",
-    }, {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NLP_-_isometric.svg/1200px-NLP_-_isometric.svg.png",
-        description: "Creation of Back-End software for logical-probabilistic methods of structural analysis of systems",
-        link: "https://github.com/lazare1999/saos_app",
-    }, {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NLP_-_isometric.svg/1200px-NLP_-_isometric.svg.png",
-        description: "Creation of Back-End software for logical-probabilistic methods of structural analysis of systems",
-        link: "https://github.com/lazare1999/saos_app",
-    },
+    }
 ]
 
 const contactConfig = {

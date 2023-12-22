@@ -1,4 +1,5 @@
 .nav {
+    opacity: 0.9;
     text-align: center;
     display: flex;
     align-items: center;
@@ -39,7 +40,7 @@
 .nav__container__actions {
     display: inline-flex;
     flex-flow: row nowrap;
-    padding-left: 50px;
+    /*padding-left: 1rem;*/
     text-align: center;
     flex: 1;
 }
@@ -62,5 +63,5 @@ li {
 }
 
 li:hover {
-    /*text-decoration: underline;*/
+    font-size: 1.6rem;
 }

@@ -14,7 +14,7 @@ export const About = () => {
   return (
     <HelmetProvider>
       <Container className="About-header">
-        <section id="about">
+        <section className="customsection" id="about">
           <Helmet>
             <meta charSet="utf-8"/>
             <title> About | {meta.title}</title>
@@ -41,17 +41,22 @@ export const About = () => {
               <h3 className="color_sec py-4">Work Timeline</h3>
             </Col>
             <Col lg="7">
-              <table className="table table-dark caption-top">
+              <table className="table custom-table">
+                <thead>
+                <tr>
+                  <th scope="col">Job Title</th>
+                  <th scope="col">Where</th>
+                  <th scope="col">Date</th>
+                </tr>
+                </thead>
                 <tbody>
-                {workTimeline.map((data, i) => {
-                  return (
-                      <tr key={i}>
-                        <th scope="row">{data.jobTitle}</th>
-                        <td>{data.where}</td>
-                        <td>{data.date}</td>
-                      </tr>
-                  );
-                })}
+                {workTimeline.map((data, i) => (
+                    <tr key={i}>
+                      <td>{data.jobTitle}</td>
+                      <td>{data.where}</td>
+                      <td>{data.date}</td>
+                    </tr>
+                ))}
                 </tbody>
               </table>
             </Col>
@@ -61,21 +66,18 @@ export const About = () => {
               <h3 className="color_sec py-4">Skills</h3>
             </Col>
             <Col lg="7">
-              {skills.map((data, i) => {
-                return (
+              <div>
+                {skills.map((data, i) => (
                     <div key={i}>
-
-                      {/*<CircularProgress*/}
-                      {/*    label={data.name}*/}
-                      {/*    size="sm"*/}
-                      {/*    value={data.value}*/}
-                      {/*    color="primary"*/}
-                      {/*    showValueLabel={true}*/}
-                      {/*/>*/}
-
+                      <div className="skill-container">
+                        <p>{data.name}</p>
+                        <div className="skills" style={{width: `${data.value}%`}}>
+                          {data.value}%
+                        </div>
+                      </div>
                     </div>
-                );
-              })}
+                ))}
+              </div>
             </Col>
           </Row>
           <Row className="sec_sp">

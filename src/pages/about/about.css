@@ -1,3 +1,51 @@
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-table caption {
+    text-align: left;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.custom-table thead {
+    background-color: #343a40; /* Dark background color */
+    color: white;
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #495057; /* Darken on hover */
+    color: white;
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    /*align-items: center;*/
+}
+
+.skills {
+    width: 0; /* Start with width 0, and it will animate to the actual width */
+    background-color: white; /* Set your desired background color */
+    color: black;
+    padding: 0.2em;
+    text-align: right;
+    line-height: 1.5;
+    transition: width 3s ease-in-out; /* Adjust the duration and easing function as needed */
+}
+
 .sec_sp {
     margin-bottom: calc(3rem + 5.128vw)
 }
