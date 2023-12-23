@@ -129,10 +129,19 @@ section {
   }
 }
 
-.floating-button {
+.floating_button_language {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  top: 2%;
+  left: 1%;
+}
+
+.floating_button_up {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+}
+
+.floating-button {
   background-color: var(--primary-color);
   border: none;
   border-radius: 50%;
