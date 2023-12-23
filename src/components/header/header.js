@@ -2,7 +2,7 @@ import React from "react";
 import {useTranslation} from "react-i18next";
 import {Link} from "react-scroll";
 import './header.css'
-import LanguageSelector from "../components/LanguageSelector";
+import LanguageSelector from "../LanguageSelector";
 
 const HeaderMain = () => {
 

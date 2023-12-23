@@ -1,5 +1,5 @@
 .contact__form .form-control {
-    width: 40%;
+    width: 90%;
     padding: 1.375rem .75rem;
     line-height: 1.5;
     color: var(--text-color);
@@ -47,5 +47,31 @@ button.btn.ac_btn:hover {
     }
     100% {
         transform: translateX(100%);
+    }
+}
+
+@media (min-width: 1300px) {
+    .split-screen-container {
+        display: flex;
+        /*height: 100vh;*/
+        align-items: center;
+        justify-content: center;
+    }
+
+    .split-section {
+        padding: 20px;
+    }
+
+    /* Add specific styles for each section if needed */
+    .split-section:nth-child(1) {
+        flex: 1;
+    }
+
+    .split-section:nth-child(2) {
+        flex: 10;
+    }
+
+    .split-section:nth-child(3) {
+        flex: 15;
     }
 }

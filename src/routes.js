@@ -1,8 +1,8 @@
 import React from "react";
-import { Home } from "./pages/home/home";
-import { Portfolio } from "./pages/portfolio/portfolio";
-import { ContactUs } from "./pages/contact/contact";
-import { About } from "./pages/about/about";
+import { Home } from "./components/pages/home/home";
+import { Portfolio } from "./components/pages/portfolio/portfolio";
+import { ContactUs } from "./components/pages/contact/contact";
+import { About } from "./components/pages/about/about";
 
 function AppRoutes() {
   return (

@@ -2,9 +2,9 @@ import React from "react";
 import "./home.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
-import { introData, meta } from "../../content_option";
-import {SocialIcons} from "../../components/socialicons";
-import YourLocalImage from "../../assets/lazo.jpg"
+import { introData, meta } from "../../../content_option";
+import {SocialIcons} from "../../socialicons";
+import YourLocalImage from "../../../assets/lazo.jpg"
 
 export const Home = () => {
   return (

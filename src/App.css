@@ -73,6 +73,20 @@ section {
   .s_c {
     padding-top: 40px;
   }
+  :root {
+    width: 100%; /* 100% of the parent container (in this case, the viewport) */
+    min-height: 100vh; /* 100% of the viewport height */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    display: flex;
+    flex-direction: column;
+    --bg-color: #0c0c0c;
+    --primary-color: #0d0d0d;
+    --secondary-color: #fff;
+    --text-color: #fff;
+    --text-color-2: #fff;
+    --text-color-3: rgb(204, 0, 0);
+    --overlay-color: rgb(12 12 12 / 63%);
+  }
 }
 
 .page-enter {
