@@ -135,6 +135,21 @@ section {
   left: 1%;
 }
 
+.language_image {
+  height: 1rem;
+  width: 2rem;
+  background: none;
+  border: none;
+  margin: 0 .1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  border-radius: .05rem
+}
+
+.language_image:hover {
+  transform: scale(1.1);
+}
+
 .floating_button_up {
   position: fixed;
   bottom: 1%;

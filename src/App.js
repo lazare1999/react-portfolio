@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import {FaArrowAltCircleUp} from "react-icons/fa";
 import Footer from "./components/footer/footer";
+import smoothScroll from 'smoothscroll-polyfill';
 import LanguageSelector from "./components/LanguageSelector";
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
     );
 }
 
+smoothScroll.polyfill();
+
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -26,15 +29,17 @@ function scrollToTop() {
 }
 
 export default function WrappedApp() {
+
+
+
     return (
         <Suspense fallback="...">
-            <div className="floating_button_language">
-                <LanguageSelector className="floating-button" onClick={scrollToTop}/>
-            </div>
+
             <App/>
             <div className="floating_button_up">
                 <FaArrowAltCircleUp className="floating-button" onClick={scrollToTop}/>
             </div>
+            <LanguageSelector/>
         </Suspense>
     )
 }

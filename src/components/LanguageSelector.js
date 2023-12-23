@@ -1,24 +1,20 @@
 import React, {useState} from "react";
 import i18n from '../i18n';
-import {useTranslation} from "react-i18next";
+import geo from "../assets/geo.png";
+import usa from "../assets/usa.webp";
 
 const LanguageSelector = () => {
-
-    const { t} = useTranslation();
-
-    const [selectedLanguage, setSelectedLanguage] = useState(i18n.language); // i18n.language contains the language assigned to lng in i18n.js file.
-
-    const chooseLanguage = (e) => {
-        e.preventDefault();
-        i18n.changeLanguage(e.target.value);   // i18n.changeLanguage() is used to change the language assigned to lng in i18n.js file.
-        setSelectedLanguage(e.target.value);
-    }
+    const changeLanguage = (languageCode) => {
+        i18n.changeLanguage(languageCode);
+    };
 
     return (
-        <select defaultValue={selectedLanguage} onChange={chooseLanguage}>
-            <option value="en">{t('english')}</option>
-            <option value="ge">{t('georgian')}</option>
-        </select>
+        <div className="floating_button_language">
+            <div>
+                <img className="language_image" src={geo} alt="English" onClick={() => changeLanguage('ge')}/>
+                <img className="language_image" src={usa} alt="English" onClick={() => changeLanguage('en')}/>
+            </div>
+        </div>
     );
 };
 
