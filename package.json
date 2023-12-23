@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0",
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
     "@vercel/speed-insights": "^1.0.2",
     "bootstrap": "^5.3.2",
     "expect": "^29.7.0",
@@ -30,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clean": "rm -rf node_modules",
+    "reinstall": "npm run clean && npm install"
   },
   "eslintConfig": {
     "extends": [
@@ -49,8 +53,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.0"
   }
 }

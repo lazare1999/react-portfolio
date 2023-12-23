@@ -5,7 +5,6 @@ import AppRoutes from "./routes";
 import {
     BrowserRouter as Router
 } from "react-router-dom";
-import Footer from "./components/footer/footer";
 
 function App() {
 
@@ -13,7 +12,6 @@ function App() {
         <Router basename={process.env.PUBLIC_URL}>
             <HeaderMain/>
             <AppRoutes/>
-            {/*<Footer />*/}
         </Router>
     );
 }
