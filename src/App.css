@@ -136,8 +136,8 @@ section {
 }
 
 .language_image {
-  height: 1rem;
-  width: 2rem;
+  height: 1.6rem;
+  width: 2.8rem;
   background: none;
   border: none;
   margin: 0 .1rem;
@@ -147,7 +147,7 @@ section {
 }
 
 .language_image:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .floating_button_up {

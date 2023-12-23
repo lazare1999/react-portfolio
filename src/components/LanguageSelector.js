@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import i18n from '../i18n';
 import geo from "../assets/geo.png";
 import usa from "../assets/usa.webp";
