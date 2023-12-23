@@ -82,6 +82,7 @@ export const ContactUs = () => {
             </div>
 
             <div className="split-screen-container">
+
               <div className="split-section">
                 <Alert
                     show={formData.show}
@@ -93,26 +94,11 @@ export const ContactUs = () => {
                   <p className="my-0">{formData.alertMessage}</p>
                 </Alert>
               </div>
-              <div className="split-section">
-                <h3 className="color_sec py-4">{t("get_in_touch")}</h3>
-                <address>
-                  <strong>{t("email")}:</strong>{' '}
-                  <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>{contactConfig.YOUR_EMAIL}</a>
-                  <br/>
-                  <br/>
-                  {contactConfig.hasOwnProperty('YOUR_FONE') ? (
-                      <p>
-                        <strong>{t("phone")}:</strong> {contactConfig.YOUR_FONE}
-                      </p>
-                  ) : (
-                      ''
-                  )}
-                </address>
-                <p>{contactConfig.description}</p>
-              </div>
+
+
               <div className="split-section">
                 <form onSubmit={handleSubmit} className="contact__form w-100">
-                  <div className="form-group">
+                  <div>
                     <input
                         className="form-control"
                         id="name"
@@ -124,7 +110,7 @@ export const ContactUs = () => {
                         onChange={handleChange}
                     />
                   </div>
-                  <div className="form-group">
+                  <div>
                     <input
                         className="form-control rounded-0"
                         id="email"
@@ -140,12 +126,11 @@ export const ContactUs = () => {
                       className="form-control rounded-0"
                       id="message"
                       name="message"
-                      placeholder={t("message")}
-                      rows="5"
+                      // placeholder={t("message")}
                       value={formData.message}
                       onChange={handleChange}
                       required
-                  ></textarea>
+                  />
                   <br/>
                   <div className="form-group">
                     <button className="btn ac_btn" type="submit" disabled={formData.loading}>
@@ -154,6 +139,8 @@ export const ContactUs = () => {
                   </div>
                 </form>
               </div>
+
+
             </div>
 
 

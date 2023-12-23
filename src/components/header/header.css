@@ -1,5 +1,4 @@
 .nav {
-    opacity: 0.9;
     text-align: center;
     display: flex;
     align-items: center;
@@ -8,7 +7,7 @@
     z-index: 2;
     height: 70px;
     min-height: 70px;
-    background-color: black;
+    background-color: var(--primary-color);
     width: calc(100% - 1.5rem);
     padding: 0 1rem;
     box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);

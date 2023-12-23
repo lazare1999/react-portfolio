@@ -26,8 +26,8 @@
 
 .po_item .content {
     position: absolute;
-    height: 0;
-    width: 0;
+    height: calc(100% - 30px);
+    width: calc(100% - 30px);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -37,25 +37,20 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    opacity: 0;
+    opacity: 1;
     border: 1px solid black;
     font-size: 20px;
     /*transition: 0.3s ease-in-out;*/
 }
 
-.po_item:hover {
-    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
-}
+/*.po_item:hover {*/
+/*    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);*/
+/*}*/
 
-.po_item:hover .content {
-    height: calc(100% - 30px);
-    width: calc(100% - 30px);
-}
-
-.po_item:hover .content {
-    opacity: 1;
-    color: var(--secondary-color);
-}
+/*.po_item:hover .content {*/
+/*    opacity: 1;*/
+/*    color: var(--secondary-color);*/
+/*}*/
 
 .po_item .content a {
     background: var(--bg-color);
@@ -65,6 +60,6 @@
     font-size: 1rem;
 }
 
-.po_item .content a:hover {
-    text-decoration: none;
-}
+/*.po_item .content a:hover {*/
+/*    text-decoration: none;*/
+/*}*/

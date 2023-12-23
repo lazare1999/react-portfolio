@@ -2,9 +2,6 @@ import React from "react";
 import "./about.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import {Row, Col, Container} from "react-bootstrap";
-import {
-  skills,
-} from "../../../content_option";
 
 import {useTranslation} from "react-i18next";
 
@@ -62,40 +59,40 @@ export const About = () => {
               </table>
             </Col>
           </Row>
-          <Row className="sec_sp">
-            <Col lg="5">
-              <h3 className="color_sec py-4">{t('skills')}</h3>
-            </Col>
-            <Col lg="7">
-              <div>
-                {skills.map((data, i) => (
-                    <div key={i}>
-                      <div className="skill-container">
-                        <p>{data.name}</p>
-                        <div className="skills" style={{width: `${data.value}%`}}>
-                          {data.value}%
-                        </div>
-                      </div>
-                    </div>
-                ))}
-              </div>
-            </Col>
-          </Row>
-          <Row className="sec_sp">
-            <Col lang="5">
-              <h3 className="color_sec py-4">{t('services_verb')}</h3>
-            </Col>
-            <Col lg="7">
-              {t('services', { returnObjects: true }).map((data, i) => {
-                return (
-                    <div className="service_ py-4" key={i}>
-                      <h5 className="service__title">{data.title}</h5>
-                      <p className="service_desc">{data.description}</p>
-                    </div>
-                );
-              })}
-            </Col>
-          </Row>
+          {/*<Row className="sec_sp">*/}
+          {/*  <Col lg="5">*/}
+          {/*    <h3 className="color_sec py-4">{t('skills')}</h3>*/}
+          {/*  </Col>*/}
+          {/*  <Col lg="7">*/}
+          {/*    <div>*/}
+          {/*      {skills.map((data, i) => (*/}
+          {/*          <div key={i}>*/}
+          {/*            <div className="skill-container">*/}
+          {/*              <p>{data.name}</p>*/}
+          {/*              <div className="skills" style={{width: `${data.value}%`}}>*/}
+          {/*                {data.value}%*/}
+          {/*              </div>*/}
+          {/*            </div>*/}
+          {/*          </div>*/}
+          {/*      ))}*/}
+          {/*    </div>*/}
+          {/*  </Col>*/}
+          {/*</Row>*/}
+          {/*<Row className="sec_sp">*/}
+          {/*  <Col lang="5">*/}
+          {/*    <h3 className="color_sec py-4">{t('services_verb')}</h3>*/}
+          {/*  </Col>*/}
+          {/*  <Col lg="7">*/}
+          {/*    {t('services', { returnObjects: true }).map((data, i) => {*/}
+          {/*      return (*/}
+          {/*          <div className="service_ py-4" key={i}>*/}
+          {/*            <h5 className="service__title">{data.title}</h5>*/}
+          {/*            <p className="service_desc">{data.description}</p>*/}
+          {/*          </div>*/}
+          {/*      );*/}
+          {/*    })}*/}
+          {/*  </Col>*/}
+          {/*</Row>*/}
         </section>
       </Container>
 

@@ -10,29 +10,27 @@ import { socialProfiles } from "../../content_option";
 export const SocialIcons = () => {
   return (
     <div className="stick_follow_icon">
-      <ul>
         {socialProfiles.github && (
-          <li>
-            <a href={socialProfiles.github}>
-              <FaGithub />
-            </a>
-          </li>
+            <div>
+                <a href={socialProfiles.github}>
+                    <FaGithub />
+                </a>
+            </div>
         )}
         {socialProfiles.facebook && (
-          <li>
-            <a href={socialProfiles.facebook}>
-              <FaFacebookF />
-            </a>
-          </li>
+            <div>
+                <a href={socialProfiles.facebook}>
+                    <FaFacebookF />
+                </a>
+            </div>
         )}
         {socialProfiles.linkedin && (
-          <li>
-            <a href={socialProfiles.linkedin}>
-              <FaLinkedin />
-            </a>
-          </li>
+            <div>
+                <a href={socialProfiles.linkedin}>
+                    <FaLinkedin />
+                </a>
+            </div>
         )}
-      </ul>
     </div>
   );
 };

@@ -87,6 +87,9 @@ section {
     --text-color-3: rgb(204, 0, 0);
     --overlay-color: rgb(12 12 12 / 63%);
   }
+  body {
+    padding-top: 5em;
+  }
 }
 
 .page-enter {
@@ -124,4 +127,15 @@ section {
   .container-xxl {
     /*max-width: 1740px;*/
   }
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 3em;
 }

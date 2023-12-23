@@ -1,11 +1,31 @@
 import React from 'react';
 import './footer.css';
+import {useTranslation} from "react-i18next";
+import {contactConfig} from "../../content_option";
 
 const Footer = () => {
+     const { t} = useTranslation();
+
     return (
         <footer className="footer">
             <div className="container">
-                <p>&copy; All rights reserved.</p>
+                <div className="split-section">
+                    <h3 className="color_sec py-4">{t("get_in_touch")}</h3>
+                    <address>
+                        <strong>{t("email")}:</strong>{' '}
+                        <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>{contactConfig.YOUR_EMAIL}</a>
+                        <br/>
+                        <br/>
+                        {contactConfig.hasOwnProperty('YOUR_FONE') ? (
+                            <p>
+                                <strong>{t("phone")}:</strong> {contactConfig.YOUR_FONE}
+                            </p>
+                        ) : (
+                            ''
+                        )}
+                    </address>
+                    <p>{contactConfig.description}</p>
+                </div>
             </div>
         </footer>
     );
