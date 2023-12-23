@@ -1,7 +1,10 @@
 import React, {useState} from "react";
 import i18n from '../i18n';
+import {useTranslation} from "react-i18next";
 
 const LanguageSelector = () => {
+
+    const { t} = useTranslation();
 
     const [selectedLanguage, setSelectedLanguage] = useState(i18n.language); // i18n.language contains the language assigned to lng in i18n.js file.
 
@@ -13,8 +16,8 @@ const LanguageSelector = () => {
 
     return (
         <select defaultValue={selectedLanguage} onChange={chooseLanguage}>
-            <option value="en">English</option>
-            <option value="ge">Georgian</option>
+            <option value="en">{t('english')}</option>
+            <option value="ge">{t('georgian')}</option>
         </select>
     );
 };

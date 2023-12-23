@@ -64,7 +64,7 @@ button.btn.ac_btn:hover {
 
     /* Add specific styles for each section if needed */
     .split-section:nth-child(1) {
-        flex: 1;
+        flex: 3;
     }
 
     .split-section:nth-child(2) {

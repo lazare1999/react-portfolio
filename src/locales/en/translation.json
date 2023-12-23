@@ -1,9 +1,60 @@
 {
-  "title": "Lazare",
+  "send": "Send",
+  "message": "message",
+  "name": "Name",
+  "phone": "Phone",
+  "email": "Email",
+  "get_in_touch": "Get in touch",
+  "services_verb": "Services",
+  "skills": "Skills",
+  "job_title": "Job Title",
+  "where": "Where",
+  "date": "date",
+  "work_timeline": "Work Timeline",
+  "view_project": "view project",
+  "english": "English",
+  "georgian": "ქართული",
+  "title": "Lazare Kvirtia",
   "main": {
     "home": "Home",
-    "about": "About",
+    "about": "About Me",
     "portfolio": "Portfolio",
-    "contact": "Contact"
-  }
+    "contact": "Contact Me"
+  },
+  "introData": {
+    "title": "I’m Lazare Kvirtia",
+    "animated": {
+      "first": "I love coding",
+      "second": "I code cool websites",
+      "third": "I develop mobile apps",
+      "fourth": "I Create AI based apps"
+    },
+    "description": "As a software developer, I design, code, and maintain software applications, ensuring their functionality and performance"
+  },
+  "dataAbout": {
+    "title": "Software Developer",
+    "aboutMe": "Professional with experience in software development and sales engineering. I have a year of internship experience in a nuclear engineering center, followed by three years at the Ministry of Internal Affairs as a full-stack software developer. After that, I worked as a sales engineer for a year and a half. Technical expertise, project management, and good communication are among the many skills I possess. I am passionate about contributing to projects that combine technology and innovation."
+  },
+  "workTimeline": [{
+    "jobTitle": "Sales Engineer",
+    "where": "Digital Technologies LLC",
+    "date": "2022-2023"
+  }, {
+    "jobTitle": "Full-stack developer",
+    "where": "Ministry Of Internal Affairs Of Georgia",
+    "date": "2019-2022"
+  }, {
+    "jobTitle": "Intern",
+    "where": "GTU Nuclear Engineering Center",
+    "date": "2018-2019"
+  }],
+  "services": [{
+    "title": "Web development",
+    "description": "cool skills of web development"
+  }],
+  "dataPortfolio": [{
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NLP_-_isometric.svg/1200px-NLP_-_isometric.svg.png",
+    "description": "Creation of Back-End software for logical-probabilistic methods of structural analysis of systems",
+    "link": "https://github.com/lazare1999/saos_app"
+  }]
 }
