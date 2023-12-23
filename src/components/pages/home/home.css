@@ -83,8 +83,8 @@
 @media (max-width:992px) {
     .intro_sec .intro {
         max-width: 700px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
