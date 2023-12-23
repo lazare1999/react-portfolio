@@ -1,5 +1,5 @@
 .contact__form .form-control {
-    width: calc(100% - 25px);
+    width: calc(65%);
     padding: .9rem .35rem;
     line-height: 1.5;
     color: var(--text-color);
@@ -55,6 +55,9 @@ button.btn.ac_btn:hover {
         transform: translateX(100%);
     }
 }
+.split-screen-container {
+
+}
 
 @media (min-width: 1200px) {
     .split-screen-container {
@@ -75,6 +78,6 @@ button.btn.ac_btn:hover {
     }
 
     .split-section:nth-child(2) {
-        flex: 3;
+        flex: 1;
     }
 }
