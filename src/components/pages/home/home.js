@@ -21,8 +21,8 @@ export const Home = () => {
                     <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
                         <div className="align-self-center ">
                             <div className="intro mx-auto">
-                                <h2 className="mb-1x">{t('introData.title')}</h2>
-                                <h1 className="fluidz-48 mb-1x">
+                                <div className="intro_data_title">{t('introData.title')}</div>
+                                <div className="intro_data_options">
                                     <Typewriter
                                         options={{
                                             strings: [
@@ -36,8 +36,8 @@ export const Home = () => {
                                             deleteSpeed: 10,
                                         }}
                                     />
-                                </h1>
-                                <p className="mb-1x">{t('introData.description')}</p>
+                                </div>
+                                <p className="intro_data_description">{t('introData.description')}</p>
                                 <div><SocialIcons/></div>
                             </div>
                         </div>

@@ -37,8 +37,8 @@ body {
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  border-left: 10px solid var(--primary-color);
-  /*border-right: 10px solid var(--primary-color);*/
+  border-left: .3em solid var(--primary-color);
+  /*border-right: .3em solid var(--primary-color);*/
 }
 
 ul {

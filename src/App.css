@@ -66,6 +66,7 @@ section {
   display: flex;
   flex-direction: column; /* Set the main axis to column */
   width: 100%;
+  margin-bottom: 3em;
   /*padding: 1em 2em 1em 1em;*/
 }
 

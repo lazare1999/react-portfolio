@@ -1,3 +1,19 @@
+.intro_data_title {
+    margin-bottom: .6em;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.intro_data_options {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.intro_data_description {
+    font-weight: bold;
+    font-size: .9em;
+}
+
 .intro_sec {
     display: flex;
     flex-direction: row;
@@ -65,6 +81,7 @@
 
 .intro_sec .text,
 .intro_sec .h_bg-image {
+    margin-left: -.3em;
     width: 50%;
 }
 
