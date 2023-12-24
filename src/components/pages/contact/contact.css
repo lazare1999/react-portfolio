@@ -1,5 +1,5 @@
 .contact__form .form-control {
-    width: calc(100% - 1.3rem);
+    width: calc(100% - .9rem);
     padding: .9rem .35rem;
     line-height: 1.5;
     color: var(--text-color);

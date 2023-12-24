@@ -81,7 +81,7 @@
 
 .intro_sec .text,
 .intro_sec .h_bg-image {
-    margin-left: -.3em;
+    /*margin-left: -.3em;*/
     width: 50%;
 }
 
