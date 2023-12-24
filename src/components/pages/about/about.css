@@ -11,8 +11,13 @@
 .about_me:hover {
     background-color: rgba(33, 150, 243, 0.5);
 }
-
+@media only screen and (max-width: 650px) {
+    .custom-table {
+        font-size: .7em;
+    }
+}
 .custom-table {
+
     margin: 0 0 0 1em;
     width: calc(100% - 1.9rem);
     border-collapse: collapse;
