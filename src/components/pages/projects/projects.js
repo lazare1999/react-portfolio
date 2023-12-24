@@ -42,7 +42,7 @@ export const Projects = () => {
             {t('dataPortfolio', { returnObjects: true }).map((data, i) => {
               return (
                   <div key={i} className="po_item">
-                    <img src={require('../../../assets/' + data.img)} alt="image"/>
+                    <img src={require('../../../assets/' + data.img)} alt=""/>
                     <div className="content">
                       <p>{data.description}</p>
                       <a href={data.link}>{t('view_project')}</a>
