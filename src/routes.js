@@ -1,6 +1,6 @@
 import React from "react";
 import { Home } from "./components/pages/home/home";
-import { Portfolio } from "./components/pages/portfolio/portfolio";
+import { Projects } from "./components/pages/projects/projects";
 import { ContactUs } from "./components/pages/contact/contact";
 import { About } from "./components/pages/about/about";
 
@@ -9,7 +9,7 @@ function AppRoutes() {
     <div className="s_c">
       <Home />
       <About />
-      <Portfolio />
+      <Projects />
       <ContactUs />
     </div>
   );

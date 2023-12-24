@@ -26,7 +26,7 @@ const HeaderMain = () => {
             </li>
             <li>
               <Link activeClass="active" smooth spy to="portfolio">
-                {t('main.portfolio')}
+                {t('main.projects')}
               </Link>
             </li>
             <li>

@@ -1,4 +1,5 @@
 {
+  "see_other_projects": "See other project on Github",
   "send": "Send",
   "message": "message",
   "name": "Name",
@@ -18,7 +19,7 @@
   "main": {
     "home": "Home",
     "about": "About Me",
-    "portfolio": "Projects",
+    "projects": "Projects",
     "contact": "Contact Me"
   },
   "introData": {
@@ -40,7 +41,7 @@
     "where": "Digital Technologies LLC",
     "date": "2022-2023"
   }, {
-    "jobTitle": "Full-stack developer",
+    "jobTitle": "Full-Stack Developer",
     "where": "Ministry Of Internal Affairs Of Georgia",
     "date": "2019-2022"
   }, {
@@ -53,8 +54,62 @@
     "description": "cool skills of web development"
   }],
   "dataPortfolio": [{
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/NLP_-_isometric.svg/1200px-NLP_-_isometric.svg.png",
-    "description": "Creation of Back-End software for logical-probabilistic methods of structural analysis of systems",
-    "link": "https://github.com/lazare1999/saos_app"
-  }]
+    "img": "NLP.png",
+    "description": "Back-End software for logical-probabilistic methods of structural analysis of systems",
+    "link": "https://github.com/lazare1999/saos-app"
+  },{
+    "img": "chess.webp",
+    "description": "Chess app made in C++",
+    "link": "https://github.com/lazare1999/chess"
+  },{
+    "img": "Android.webp",
+    "description": "Android course",
+    "link": "https://github.com/lazare1999/android-course"
+  },{
+    "img": "Python.png",
+    "description": "Python course",
+    "link": "https://github.com/lazare1999/py"
+  },{
+    "img": "R.jpeg",
+    "description": "R course",
+    "link": "https://github.com/lazare1999/R"
+  },{
+    "img": "JavaFX.png",
+    "description": "Elgamal cryptography algorithm realization",
+    "link": "https://github.com/lazare1999/elgamal-javafx"
+  },{
+    "img": "github_actions.png",
+    "description": "Generates podcast feeds using YAML, hosted by GitHub pages",
+    "link": "https://github.com/lazare1999/podcast-generator"
+  },{
+    "img": "flutter.png",
+    "description": "Geo Couriers projects Front-End",
+    "link": "https://github.com/lazare1999/geocourier-web"
+  },{
+    "img": "Computer_vision.jpg",
+    "description": "My master thesis in Informatics",
+    "link": "https://github.com/lazare1999/master-thesis"
+  },{
+    "img": "springboot.png",
+    "description": "Geo Couriers projects Back-End",
+    "link": "https://github.com/lazare1999/couriers-service"
+  },{
+    "img": "React.png",
+    "description": "React Native test app",
+    "link": "https://github.com/lazare1999/my-mobile-app"
+  },{
+    "img": "Java.png",
+    "description": "Orthogonalization algorithm realization in Javafx",
+    "link": "https://github.com/lazare1999/orthogonalization-javafx"
+  },{
+    "img": "django-faster.webp",
+    "description": "Py Web. Part of the \"py\" course",
+    "link": "https://github.com/lazare1999/py_web"
+  },{
+    "img": "fast_power.png",
+    "description": "Fast powering algorithm",
+    "link": "https://github.com/lazare1999/fast-powering-algorithm"
+  }
+
+  ]
 }

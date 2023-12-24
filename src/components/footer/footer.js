@@ -18,7 +18,7 @@ const Footer = () => {
                         <br/>
                         {contactConfig.hasOwnProperty('YOUR_FONE') ? (
                             <p>
-                                <strong>{t("phone")}:</strong> {contactConfig.YOUR_FONE}
+                                <a href={'tel:'+contactConfig.YOUR_FONE}><strong>{t("phone")}:</strong> {contactConfig.YOUR_FONE_2}</a>
                             </p>
                         ) : (
                             ''

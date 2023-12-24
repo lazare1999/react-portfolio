@@ -1,11 +1,12 @@
 .contact__form .form-control {
-    width: calc(65%);
+    width: calc(100% - 1.3rem);
     padding: .9rem .35rem;
     line-height: 1.5;
     color: var(--text-color);
     background-color: var(--bg-color);
-    border-radius: 0 !important;
+    border-radius: .5em !important;
     border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 2rem rgba(33, 150, 243, 0.5);
 }
 
 .contact__form input.form-control {
@@ -20,12 +21,22 @@
 }
 
 button.btn.ac_btn {
-    color: black;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: .6rem;
+    border-color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 5em;
+    width: fit-content; /* Set width to auto for dynamic sizing */
+    box-shadow: 0 0 2rem rgba(33, 150, 243, 0.5);
 }
 
 button.btn.ac_btn:hover {
-    color: green;
-    font-weight: bold;
+    background-color: rgba(33, 150, 243, 0.5);
 }
 
 .loading-bar {
@@ -60,6 +71,10 @@ button.btn.ac_btn:hover {
 }
 
 @media (min-width: 1200px) {
+    .contact__form {
+        width: 35em;
+    }
+
     .split-screen-container {
         display: flex;
         flex-direction: row;
@@ -69,7 +84,7 @@ button.btn.ac_btn:hover {
     }
 
     .split-section {
-        padding: 20px;
+        padding: 1em;
     }
 
     /* Add specific styles for each section if needed */
@@ -79,5 +94,8 @@ button.btn.ac_btn:hover {
 
     .split-section:nth-child(2) {
         flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

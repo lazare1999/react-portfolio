@@ -1,31 +1,46 @@
-.custom-table {
-    width: calc(100% - 10px);
+.about_me {
+    margin: 1.5em 0 0 1em;
+    width: calc(100% - 3.9rem);
+    padding: 1em;
     border-collapse: collapse;
-    border-radius: 8px;
+    border-radius: 2em;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2rem rgba(33, 150, 243, 0.5);
+}
+
+.about_me:hover {
+    background-color: rgba(33, 150, 243, 0.5);
+}
+
+.custom-table {
+    margin: 0 0 0 1em;
+    width: calc(100% - 1.9rem);
+    border-collapse: collapse;
+    border-radius: 2em;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(33, 150, 243, 0.5);
 }
 
 .custom-table caption {
     text-align: left;
     font-size: 1.2em;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 
 .custom-table thead {
-    background-color: #343a40; /* Dark background color */
-    color: white;
+    background-color: rgba(20, 90, 145, 0.5); /* Dark background color */
+    color: var(--secondary-color);
 }
 
 .custom-table th,
 .custom-table td {
-    padding: 12px;
+    padding: .8em;
     text-align: left;
     border-bottom: 1px solid #dee2e6;
 }
 
 .custom-table tbody tr:hover {
-    background-color: #495057; /* Darken on hover */
+    background-color: rgba(33, 150, 243, 0.5); /* Darken on hover */
     color: white;
 }
 
@@ -34,16 +49,6 @@
     flex-direction: column;
     font-weight: bold;
     /*align-items: center;*/
-}
-
-.skills {
-    width: 0; /* Start with width 0, and it will animate to the actual width */
-    background-color: white; /* Set your desired background color */
-    color: black;
-    padding: 0.2em;
-    text-align: right;
-    line-height: 1.5;
-    transition: width 3s ease-in-out; /* Adjust the duration and easing function as needed */
 }
 
 .sec_sp {
@@ -61,13 +66,6 @@
 
 .t_border {
     border-color: var(--text-color) !important;
-}
-
-.progress-title {
-    font-size: 16px;
-    font-weight: 700;
-    margin: 15px 0 20px;
-    font-family: 'Raleway', serif;
 }
 
 @-webkit-keyframes animate-positive {

@@ -1,18 +1,7 @@
-const skills = [{
-        name: "Java Spring",
-        value: 95,
-    }, {
-        name: "ExtJS",
-        value: 95,
-    }, {
-        name: "Python",
-        value: 90,
-    }
-]
-
 const contactConfig = {
     YOUR_EMAIL: "lazarekvirtia@gmail.com",
-    YOUR_FONE: "(+995)595-22-13-41",
+    YOUR_FONE: "+995595221341",
+    YOUR_FONE_2: "(+995) 595-22-13-41",
     description: " ",
     YOUR_SERVICE_ID: "service_aea2e89",
     YOUR_TEMPLATE_ID: "template_72dh07x",
@@ -25,7 +14,6 @@ const socialProfiles = {
 }
 
 export {
-    skills,
     contactConfig,
     socialProfiles,
 }

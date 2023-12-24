@@ -25,27 +25,27 @@ export const About = () => {
             </Col>
           </Row>
           <Row className="sec_sp">
-            <Col lg="5">
-              <h3 className="color_sec py-4">{t('dataAbout.title')}</h3>
-            </Col>
+            {/*<Col lg="5">*/}
+            {/*  <h3 className="color_sec py-4">{t('dataAbout.title')}</h3>*/}
+            {/*</Col>*/}
             <Col lg="7" className="d-flex align-items-center">
-              <div>
+              <div className="about_me">
                 <p>{t('dataAbout.aboutMe')}</p>
               </div>
             </Col>
           </Row>
           <Row className=" sec_sp">
-            <Col lg="5">
-              <h3 className="color_sec py-4">{t('work_timeline')}</h3>
-            </Col>
+            {/*<Col lg="5">*/}
+            {/*  <div className="work_timeline py-4">{t('work_timeline')}</div>*/}
+            {/*</Col>*/}
             <Col lg="7">
               <table className="table custom-table">
                 <thead>
-                <tr>
-                  <th scope="col">{t('job_title')}</th>
-                  <th scope="col">{t('where')}</th>
-                  <th scope="col">{t('date')}</th>
-                </tr>
+                  <tr>
+                    <th scope="col">{t('work_timeline')}</th>
+                    <th scope="col">{t('where')}</th>
+                    <th scope="col">{t('date')}</th>
+                  </tr>
                 </thead>
                 <tbody>
                 {t('workTimeline', { returnObjects: true }).map((data, i) => (
