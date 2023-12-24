@@ -100,6 +100,7 @@ export const ContactUs = () => {
                 <form onSubmit={handleSubmit} className="contact__form w-100">
                   <div>
                     <input
+                        autoComplete="on"
                         className="form-control"
                         id="name"
                         name="name"
@@ -112,6 +113,7 @@ export const ContactUs = () => {
                   </div>
                   <div>
                     <input
+                        autoComplete="on"
                         className="form-control rounded-0"
                         id="email"
                         name="email"
