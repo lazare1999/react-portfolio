@@ -26,6 +26,6 @@ i18n
         },
         ns: "translation", // namespaces help to divide huge translations into multiple small files.
         defaultNS: "translation"
-    });
+    }).then(r => r);
 
 export default i18n;

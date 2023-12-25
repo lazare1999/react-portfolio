@@ -20,9 +20,9 @@ export const ContactUs = () => {
     variant: "",
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
-    setFormData({ loading: true });
+    setFormData({ loading: true, show: false, alertMessage: "", variant: "", email: "", name: "", message: "" });
 
     const templateParams = {
       from_name: formData.email,
@@ -42,6 +42,9 @@ export const ContactUs = () => {
         (result) => {
           console.log(result.text);
           setFormData({
+            email: "",
+            name: "",
+            message: "",
             loading: false,
             alertMessage: "SUCCESS! ,Thank you for your message",
             variant: "success",
@@ -51,6 +54,10 @@ export const ContactUs = () => {
         (error) => {
           console.log(error.text);
           setFormData({
+            email: "",
+            name: "",
+            message: "",
+            loading: false,
             alertMessage: `Failed to send!, ${error.text}`,
             variant: "danger",
             show: true,
@@ -60,7 +67,7 @@ export const ContactUs = () => {
       );
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -88,7 +95,7 @@ export const ContactUs = () => {
                     show={formData.show}
                     variant={formData.variant}
                     className={`rounded-0 co_alert ${formData.show ? 'd-block' : 'd-none'}`}
-                    onClose={() => setFormData({show: false})}
+                    onClose={() => setFormData({show: false, alertMessage: "", variant: "", email: "", name: "", message: "", loading: false})}
                     dismissible
                 >
                   <p className="my-0">{formData.alertMessage}</p>

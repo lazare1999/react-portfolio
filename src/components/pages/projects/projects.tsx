@@ -1,22 +1,24 @@
-import React from "react";
-import "./projects.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import {Row, Col, Container} from "react-bootstrap";
 import {useTranslation} from "react-i18next";
 import {socialProfiles} from "../../../content_option";
+import {Helmet, HelmetProvider} from "react-helmet-async";
+import './projects.scss';
 
 export const Projects = () => {
 
   const { t} = useTranslation();
+  const obj = t('dataPortfolio', { returnObjects: true });
+  const array = Object.keys(obj).map((key) => {
+    return obj[key as keyof typeof obj];
+  });
 
   // JavaScript function to add the 'animate' class to the button
   function animateButton() {
     const button = document.querySelector('.other_projects');
-    button.classList.add('animate');
+    button?.classList.add('animate');
 
     // Remove the 'animate' class after the animation completes
     setTimeout(() => {
-      button.classList.remove('animate');
+      button?.classList.remove('animate');
       window.open(
           socialProfiles.github, "_blank");
     }, 300);
@@ -25,21 +27,19 @@ export const Projects = () => {
   }
 
   return (
-    <HelmetProvider>
-      <Container className="About-header">
+      <HelmetProvider>
         <section id="portfolio" className="About-header">
           <Helmet>
             <meta charSet="utf-8"/>
             <title>{t('title')}</title>
           </Helmet>
-          <Row className="mb-5 mt-3 pt-md-3">
-            <Col lg="8">
-              <h1 className="display-4 mb-4">{t('main.projects')}</h1>{" "}
-              <hr className="t_border my-4 ml-0 text-left"/>
-            </Col>
-          </Row>
+          <div className="mb-5 mt-3 pt-md-3">
+            <div className="display-4 mb-4">{t('main.projects')}</div>
+            {" "}
+            <hr className="t_border my-4 ml-0 text-left"/>
+          </div>
           <div className="mb-5 po_items_ho">
-            {t('dataPortfolio', { returnObjects: true }).map((data, i) => {
+            {array.map((data: any, i) => {
               return (
                   <div key={i} className="po_item">
                     <img src={require('../../../assets/' + data.img)} alt=""/>
@@ -57,7 +57,6 @@ export const Projects = () => {
           </div>
 
         </section>
-      </Container>
-    </HelmetProvider>
+      </HelmetProvider>
   );
 };

@@ -1,13 +1,12 @@
 import './App.css';
 import React, {Suspense} from 'react';
-import AppRoutes from "./routes";
 import {
     BrowserRouter as Router
 } from "react-router-dom";
 import {FaArrowAltCircleUp} from "react-icons/fa";
-import Footer from "./components/footer/footer";
-import smoothScroll from 'smoothscroll-polyfill';
 import LanguageSelector from "./components/LanguageSelector";
+import AppRoutes from "./routes";
+import Footer from "./components/footer/footer";
 
 function App() {
 
@@ -18,8 +17,6 @@ function App() {
         </Router>
     );
 }
-
-smoothScroll.polyfill();
 
 function scrollToTop() {
     window.scrollTo({

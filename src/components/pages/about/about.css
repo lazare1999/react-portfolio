@@ -125,3 +125,7 @@
         transform: translateZ(0);
     }
 }
+
+.ubuntu_div {
+    padding: 1em;
+}
