@@ -61,7 +61,7 @@ export const About = () => {
           </Row>
 
           <div className="ubuntu_div">
-            <UbuntuApplication index={1}/>
+            <UbuntuApplication/>
           </div>
         </section>
       </Container>
