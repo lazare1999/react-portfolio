@@ -88,7 +88,7 @@ export const Body = (props: props) => {
   useEffect(() => {
     /** Listens for the enter key being pressed on main keyboard/numpad */
     const enterKeyListener = (event: any) => {
-      if (event.code === "NumpadEnter" || event.code === "Enter") {
+      if (event.code === "NumpadEnter" || event.code === "Enter" || event.code === 13) {
         submitInput();
       }
     };
@@ -100,7 +100,7 @@ export const Body = (props: props) => {
       // Unregisters the enter key listener on unmount
       window.removeEventListener("keydown", enterKeyListener);
     };
-  }, [terminalInput]);
+  }, [terminalInput, submitInput]);
 
   /** Genereates the `user@computer:~$` line seen at the beginning of entered command inputs */
   const generateLine = () => {
