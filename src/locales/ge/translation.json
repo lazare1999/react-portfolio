@@ -109,6 +109,10 @@
     "img": "fast_power.png",
     "description": "სწრაფი ახარისხების ალგორითმი",
     "link": "https://github.com/lazare1999/fast-powering-algorithm"
+  },{
+    "img": "portfolio.jpg",
+    "description": "პორთფოლიო აწყობილი რეაქტში",
+    "link": "https://github.com/lazare1999/react-portfolio"
   }
 
   ]

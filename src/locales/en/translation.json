@@ -109,6 +109,10 @@
     "img": "fast_power.png",
     "description": "Fast powering algorithm",
     "link": "https://github.com/lazare1999/fast-powering-algorithm"
+  },{
+    "img": "portfolio.jpg",
+    "description": "React Portfolio",
+    "link": "https://github.com/lazare1999/react-portfolio"
   }
 
   ]
