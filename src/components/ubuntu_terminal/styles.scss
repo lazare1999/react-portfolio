@@ -8,7 +8,7 @@ $ubuntu_font:'Ubuntu Mono', monospace;
 .ubuntu {
   padding: 0;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 1em;
 
   font-family: $ubuntu_font;
   box-shadow: 0 0 2rem rgba(33, 150, 243, 0.5);

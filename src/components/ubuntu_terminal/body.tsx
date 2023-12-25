@@ -90,7 +90,7 @@ export const Body = (props: props) => {
 
     /** Listens for the enter key being pressed on main keyboard/numpad */
     const enterKeyListener = (event: any) => {
-      if (event.code === "NumpadEnter" || event.code === "Enter" || event.code === 13) {
+      if (event.code === "NumpadEnter" || event.code === "Enter" || event.code === "13") {
         submitInput();
       }
     };

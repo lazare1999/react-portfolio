@@ -63,6 +63,7 @@ export const About = () => {
           <div className="ubuntu_div">
             <UbuntuApplication/>
           </div>
+
         </section>
       </Container>
 
