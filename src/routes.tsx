@@ -7,10 +7,10 @@ import { Projects } from "./components/pages/projects/projects";
 function AppRoutes() {
   return (
     <div className="s_c">
-      <Home />
-      <About />
-      <Projects />
-      <ContactUs />
+        <Home />
+        <About />
+        <Projects />
+        <ContactUs />
     </div>
   );
 }

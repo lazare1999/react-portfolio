@@ -12,8 +12,7 @@ $ubuntu_font:'Ubuntu Mono', monospace;
 
   font-family: $ubuntu_font;
   box-shadow: 0 0 2rem rgba(33, 150, 243, 0.5);
-  position: relative;
-  
+
   &__navigation-bar {
     height: 2.5em;
     background-color: #312f30;
@@ -25,17 +24,17 @@ $ubuntu_font:'Ubuntu Mono', monospace;
     justify-content: center;
     align-items: center;
   }
-  
+
   &__body {
     min-height: 15em;
     padding: .1em .3em;
 
     font-size: large;
     cursor: default;
-    
+
     background: #300a24;
     color: #d4f9ee;
-    
+
   }
 
   .nb {

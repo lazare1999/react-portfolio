@@ -135,7 +135,6 @@ export const Body = (props: props) => {
         <input
           className="terminal-input"
           type="text"
-          autoFocus
           onChange={onInputChange}
           spellCheck={false}
           value={terminalInput}

@@ -34,7 +34,7 @@ export const Projects = () => {
             <title>{t('title')}</title>
           </Helmet>
           <div className="mb-5 mt-3 pt-md-3">
-            <div className="display-4 mb-4">{t('main.projects')}</div>
+            <h1 className="display-4 mb-4">{t('main.projects')}</h1>
             {" "}
             <hr className="t_border my-4 ml-0 text-left"/>
           </div>
