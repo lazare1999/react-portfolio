@@ -14,10 +14,10 @@ function App() {
 
     return (
         <Router basename={process.env.PUBLIC_URL}>
-            <AppRoutes />
-            <Footer />
             <Analytics />
             <SpeedInsights />
+            <AppRoutes />
+            <Footer />
         </Router>
     );
 }
