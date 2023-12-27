@@ -7,7 +7,7 @@ interface props {
 /** Body of the Ubuntu terminal — where the commands are executed */
 export const Body = (props: props) => {
   const [enteredInputs, setEnteredInputs] = useState<string[]>([]);
-  const [terminalInput, setInput] = useState<string>('Type "help" for more information.');
+  const [terminalInput, setInput] = useState<string>('Type "help" for more info.');
   const inputRef = useRef<any>();
   const { config } = props;
 

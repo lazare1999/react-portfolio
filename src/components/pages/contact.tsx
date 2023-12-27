@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import "./contact.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Alert } from "react-bootstrap";
-import {contactConfig} from "../../../content_option";
+import {contactConfig} from "../contentOption";
 import * as emailJs from "@emailjs/browser";
 import {useTranslation} from "react-i18next";
 

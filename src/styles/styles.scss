@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+$ubuntu_green: #8be331;
+$ubuntu_blue: #739ece;
+$ubuntu_white: #ffffff;
+$ubuntu_font:'Ubuntu Mono', monospace;
+
+.ubuntu {
+    padding: 0;
+    overflow: hidden;
+    border-radius: 1em;
+
+    font-family: $ubuntu_font;
+    box-shadow: 0 0 2rem rgba(33, 150, 243, 0.5);
+
+    &__navigation-bar {
+        height: 2.5em;
+        background-color: #312f30;
+        color: $ubuntu_white;
+        padding: 0 .4em;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__body {
+        min-height: 15em;
+        padding: .1em .3em;
+
+        font-size: large;
+        cursor: default;
+
+        background: #300a24;
+        color: #d4f9ee;
+
+    }
+
+    .nb {
+        &__center{
+            justify-self: center;
+            font-weight: 300;
+            cursor: default;
+            user-select: none;
+        }
+
+        &__right {
+            justify-self: end;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr) min-content;
+            column-gap: 1em;
+
+            justify-items: center;
+            align-items: center;
+        }
+    }
+
+    .command {
+        &__green {
+            color: rgba(33, 150, 243, 0.5);
+        }
+        &__white {
+            color: $ubuntu_white;
+        }
+
+        &__blue {
+            color: $ubuntu_blue;
+        }
+    }
+}
+
+.custom {
+    height: 1em;
+}
+
+.close {
+    color: #312f30;
+}
+
+.custom:hover .close {
+    color: #e25728;
+}
+
+.raised {
+    background-color: #403e3f;
+    border: 1px solid #282626;
+    border-radius: 4px;
+    padding: 5px 8px;
+}
+
+.raised:hover {
+    background-color: #282626;
+}
+
+.terminal-input {
+    border: none;
+    min-width: 70%;
+
+    color: $ubuntu_white;
+    background: none;
+
+    font-family: $ubuntu_font;
+    font-size: large;
+
+    &:active, &:focus {
+        outline: none;
+    }
+}
+
+.max-square, .min-square, .min {
+    padding: 5px 8px;
+    &:hover {
+        background-color: #403e3f;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .max-square, .min-square, .min {
+        display: none;
+    }
+    .custom {
+        display: none;
+    }
+    .close {
+        display: none;
+    }
+    .raised {
+        display: none;
+    }
+    .ubuntu__navigation-bar .nb__center {
+        display: none;
+    }
+    .ubuntu__body {
+
+        font-size: medium;
+    }
+    .terminal-input {
+        font-size: medium;
+        min-width: 100%;
+    }
+}
+
+.po_items_ho {
+    padding-right: .6em;
+    column-width: 15em;
+    -moz-column-width: 15em;
+    -webkit-column-width: 15em;
+    column-gap: 4rem;
+    -moz-column-gap: 4rem;
+    -webkit-column-gap: 4rem;
+}
+
+.po_item {
+    display: inline-block;
+    width: 100%;
+    min-height: 12em;
+    text-align: center;
+    margin: 0.5rem auto;
+    position: relative;
+    background: var(--secondary-color);
+    padding: .18rem .18rem 0 .18rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(33, 150, 243, 0.5);
+}
+
+.po_item img {
+    max-width: 100%;
+    min-height: 13em;
+    max-height: 13em;
+    border-radius: 1rem;
+}
+
+.po_item .content {
+    position: absolute;
+    height: calc(100% - 30px);
+    width: calc(100% - 30px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--overlay-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 1rem;
+    font-size: 20px;
+}
+
+.po_item .content a {
+    background: var(--bg-color);
+    border: solid 1px var(--text-color);
+    padding: .4em .8em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.po_item .content a:hover {
+    background-color: rgba(33, 150, 243, 0.5);
+}
+
+.other_button_div {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the button */
+.other_projects {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: .6rem;
+    border-color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content; /* Set width to auto for dynamic sizing */
+    box-shadow: 0 0 2rem rgba(33, 150, 243, 0.5);
+}
+
+/* Hover effect */
+.other_projects:hover {
+    background-color: rgba(33, 150, 243, 0.5);
+}
+
+/* Add a simple animation */
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply the animation to the button */
+.other_projects.animate {
+    animation: scale 0.5s ease;
+}

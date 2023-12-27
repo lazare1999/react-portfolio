@@ -1,12 +1,13 @@
-import './App.css';
 import React, {Suspense} from 'react';
 import {
     BrowserRouter as Router
 } from "react-router-dom";
 import {FaArrowAltCircleUp} from "react-icons/fa";
-import LanguageSelector from "./components/LanguageSelector";
-import AppRoutes from "./routes";
-import Footer from "./components/footer/footer";
+import LanguageSelector from "./components/languageSelector";
+import AppRoutes from "./components/routes";
+import Footer from "./components/footer";
+import "./styles/styles.css";
+import "./styles/styles.scss";
 
 function App() {
 

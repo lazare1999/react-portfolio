@@ -1,4 +1,3 @@
-import "./styles.scss";
 import { UbuntuTerminal } from "./ubuntuTerminal";
 import React, {useRef} from "react";
 

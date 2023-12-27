@@ -1,8 +1,7 @@
 import React from "react";
 import {useTranslation} from "react-i18next";
 import {Link} from "react-scroll/modules";
-import './header.css'
-import LanguageSelector from "../LanguageSelector";
+import LanguageSelector from "./languageSelector";
 
 const HeaderMain = () => {
 

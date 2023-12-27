@@ -1,11 +1,10 @@
 import React from "react";
-import "./socialicons.css";
 import {
   FaGithub,
   FaFacebookF,
   FaLinkedin,
 } from "react-icons/fa";
-import { socialProfiles } from "../../content_option";
+import { socialProfiles } from "./contentOption";
 
 export const SocialIcons = () => {
   return (

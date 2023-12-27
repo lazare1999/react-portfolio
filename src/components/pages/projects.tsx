@@ -1,7 +1,7 @@
 import {useTranslation} from "react-i18next";
-import {socialProfiles} from "../../../content_option";
+import {socialProfiles} from "../contentOption";
 import {Helmet, HelmetProvider} from "react-helmet-async";
-import './projects.scss';
+import '../../styles/styles.scss';
 
 export const Projects = () => {
 
@@ -42,7 +42,7 @@ export const Projects = () => {
             {array.map((data: any, i) => {
               return (
                   <div key={i} className="po_item">
-                    <img src={require('../../../assets/' + data.img)} alt=""/>
+                    <img src={require('../../assets/' + data.img)} alt=""/>
                     <div className="content">
                       <p>{data.description}</p>
                       <a href={data.link}>{t('view_project')}</a>

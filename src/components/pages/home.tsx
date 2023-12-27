@@ -1,9 +1,8 @@
 import React from "react";
-import "./home.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
-import {SocialIcons} from "../../socialicons/socialicons";
-import YourLocalImage from "../../../assets/lazo.jpg"
+import {SocialIcons} from "../socialicons";
+import YourLocalImage from "../../assets/lazo.jpg"
 import {useTranslation} from "react-i18next";
 
 export const Home = () => {
@@ -37,7 +36,7 @@ export const Home = () => {
                                         }}
                                     />
                                 </div>
-                                <p className="intro_data_description">{t('introData.description')}</p>
+                                <div className="intro_data_description">{t('introData.description')}</div>
                                 <div><SocialIcons/></div>
                             </div>
                         </div>

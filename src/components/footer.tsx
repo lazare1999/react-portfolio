@@ -1,7 +1,6 @@
 import React from 'react';
-import './footer.css';
 import {useTranslation} from "react-i18next";
-import {contactConfig} from "../../content_option";
+import {contactConfig} from "./contentOption";
 
 const Footer = () => {
      const { t} = useTranslation();

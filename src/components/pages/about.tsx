@@ -1,10 +1,9 @@
 import React from "react";
-import "./about.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import {Row, Col, Container} from "react-bootstrap";
 
 import {useTranslation} from "react-i18next";
-import {UbuntuApplication} from "../../ubuntu_terminal/UbuntuApplication";
+import {UbuntuApplication} from "../ubuntu_terminal/ubuntuApplication";
 
 
 export const About = () => {

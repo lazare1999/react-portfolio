@@ -1,7 +1,7 @@
 import React from "react";
 import geo from "../assets/geo.png";
 import usa from "../assets/usa.webp";
-import i18n from "../i18n";
+import i18n from "../conf/i18n";
 
 const LanguageSelector = () => {
 
