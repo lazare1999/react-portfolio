@@ -133,12 +133,13 @@ export const Body = (props: props) => {
       <div className="input">
         {generateLine()}
         <input
-          className="terminal-input"
-          type="text"
-          onChange={onInputChange}
-          spellCheck={false}
-          value={terminalInput}
-          ref={inputRef}
+            id="terminal-input"
+            className="terminal-input"
+            type="text"
+            onChange={onInputChange}
+            spellCheck={false}
+            value={terminalInput}
+            ref={inputRef}
         />
       </div>
     </div>

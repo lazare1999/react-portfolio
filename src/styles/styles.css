@@ -185,6 +185,7 @@ section {
 
 .about_me:hover {
   background-color: rgba(33, 150, 243, 0.5);
+  transition: .9s ease;
 }
 
 @media only screen and (max-width: 650px) {
@@ -221,6 +222,7 @@ section {
 }
 
 .custom-table tbody tr:hover {
+  transition: .9s ease;
   background-color: rgba(33, 150, 243, 0.5); /* Darken on hover */
   color: white;
 }
@@ -285,6 +287,7 @@ button.btn.ac_btn {
 
 button.btn.ac_btn:hover {
   background-color: rgba(33, 150, 243, 0.5);
+  transition: .9s ease;
 }
 
 .loading-bar {

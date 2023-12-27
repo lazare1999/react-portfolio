@@ -8,7 +8,7 @@ $ubuntu_font:'Ubuntu Mono', monospace;
 .ubuntu {
     padding: 0;
     overflow: hidden;
-    border-radius: 1em;
+    border-radius: .5rem;
 
     font-family: $ubuntu_font;
     box-shadow: 0 0 2rem rgba(33, 150, 243, 0.5);
@@ -85,7 +85,7 @@ $ubuntu_font:'Ubuntu Mono', monospace;
 .raised {
     background-color: #403e3f;
     border: 1px solid #282626;
-    border-radius: 4px;
+    border-radius: .5rem;
     padding: 5px 8px;
 }
 
@@ -146,30 +146,31 @@ $ubuntu_font:'Ubuntu Mono', monospace;
     column-width: 15em;
     -moz-column-width: 15em;
     -webkit-column-width: 15em;
-    column-gap: 4rem;
-    -moz-column-gap: 4rem;
-    -webkit-column-gap: 4rem;
+    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    -webkit-column-gap: 2rem;
 }
 
 .po_item {
     display: inline-block;
     width: 100%;
-    min-height: 12em;
+    //min-height: 14em;
     text-align: center;
     margin: 0.5rem auto;
     position: relative;
     background: var(--secondary-color);
     padding: .18rem .18rem 0 .18rem;
     border: 1px solid var(--secondary-color);
-    border-radius: 1rem;
+    border-radius: .5rem;
     box-shadow: 0 0 2rem rgba(33, 150, 243, 0.5);
 }
 
 .po_item img {
+    min-width: 100%;
     max-width: 100%;
     min-height: 13em;
     max-height: 13em;
-    border-radius: 1rem;
+    border-radius: .5rem;
 }
 
 .po_item .content {
@@ -184,8 +185,8 @@ $ubuntu_font:'Ubuntu Mono', monospace;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 1rem;
+    //border: 1px solid black;
+    border-radius: .5rem;
     font-size: 20px;
 }
 
@@ -195,11 +196,12 @@ $ubuntu_font:'Ubuntu Mono', monospace;
     padding: .4em .8em;
     text-align: center;
     font-weight: bold;
-    border-radius: 1rem;
+    border-radius: .5rem;
     text-decoration: none;
     font-size: 1rem;
 }
 .po_item .content a:hover {
+    transition: .9s ease;
     background-color: rgba(33, 150, 243, 0.5);
 }
 
@@ -215,10 +217,10 @@ $ubuntu_font:'Ubuntu Mono', monospace;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: .6rem;
-    border-color: white;
+    //border-color: white;
     font-size: 1em;
     font-weight: bold;
-    border-radius: 1rem;
+    border-radius: .5rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: fit-content; /* Set width to auto for dynamic sizing */
@@ -227,6 +229,7 @@ $ubuntu_font:'Ubuntu Mono', monospace;
 
 /* Hover effect */
 .other_projects:hover {
+    transition: .9s ease;
     background-color: rgba(33, 150, 243, 0.5);
 }
 

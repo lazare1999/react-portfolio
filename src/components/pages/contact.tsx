@@ -103,7 +103,7 @@ export const ContactUs = () => {
 
 
               <div className="split-section">
-                <form onSubmit={handleSubmit} className="contact__form w-100">
+                <form id="contact__form" onSubmit={handleSubmit} className="contact__form w-100">
                   <div>
                     <input
                         autoComplete="on"
