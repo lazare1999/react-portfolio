@@ -1,7 +1,6 @@
 import {useTranslation} from "react-i18next";
 import {socialProfiles} from "../contentOption";
 import {Helmet, HelmetProvider} from "react-helmet-async";
-import '../../styles/styles.scss';
 
 export const Projects = () => {
 

@@ -7,14 +7,15 @@ import LanguageSelector from "./components/languageSelector";
 import AppRoutes from "./components/routes";
 import Footer from "./components/footer";
 import "./styles/styles.css";
-import "./styles/styles.scss";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 
     return (
         <Router basename={process.env.PUBLIC_URL}>
-            <AppRoutes/>
-            <Footer/>
+            <AppRoutes />
+            <Footer />
+            <Analytics />
         </Router>
     );
 }
