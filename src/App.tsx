@@ -7,8 +7,8 @@ import LanguageSelector from "./components/languageSelector";
 import AppRoutes from "./components/routes";
 import Footer from "./components/footer";
 import "./styles/styles.css";
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import {Analytics} from '@vercel/analytics/react';
+import {SpeedInsights} from '@vercel/speed-insights/react';
 
 function App() {
 
