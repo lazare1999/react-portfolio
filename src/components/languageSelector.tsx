@@ -14,8 +14,8 @@ const LanguageSelector = () => {
     return (
         <div className="floating_button_language">
             <div>
-                <img className="language_image" src={geo} alt="English" onClick={() => changeLanguage({languageCode: 'ge'})}/>
-                <img className="language_image" src={usa} alt="English" onClick={() => changeLanguage({languageCode: 'en'})}/>
+                <img className="language_image" src={geo} loading="lazy" alt="English" onClick={() => changeLanguage({languageCode: 'ge'})}/>
+                <img className="language_image" src={usa} loading="lazy" alt="English" onClick={() => changeLanguage({languageCode: 'en'})}/>
             </div>
         </div>
     );

@@ -43,7 +43,7 @@ export const Projects = () => {
             {array.map((data: any, i) => {
               return (
                   <div key={i} className="po_item">
-                    <img src={require('../../assets/' + data.img)} alt=""/>
+                    <img src={require('../../assets/' + data.img)} alt="" loading="lazy"/>
                     <div className="content">
                       <p>{data.description}</p>
                       <a href={data.link}>{t('view_project')}</a>
