@@ -1,6 +1,8 @@
+// @flow
+
 import React from "react";
-import geo from "../assets/geo.png";
-import usa from "../assets/usa.webp";
+import geo from "../assets/geo.jpg";
+import usa from "../assets/usa.jpg";
 import i18n from "../conf/i18n";
 
 const LanguageSelector = () => {

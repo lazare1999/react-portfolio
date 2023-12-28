@@ -1,3 +1,5 @@
+// @flow
+
 import React, { useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Alert } from "react-bootstrap";

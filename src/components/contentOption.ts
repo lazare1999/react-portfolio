@@ -1,3 +1,5 @@
+// @flow
+
 const contactConfig = {
     YOUR_EMAIL: "lazarekvirtia@gmail.com",
     YOUR_FONE: "+995595221341",

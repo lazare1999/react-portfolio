@@ -1,10 +1,12 @@
+// @flow
+
 import { Configuration } from 'webpack';
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const config: Configuration = {
     mode: 'development',
-    entry: "./src/index.tsx",
+    entry: "../index.tsx",
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',

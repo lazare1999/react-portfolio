@@ -1,3 +1,5 @@
+// @flow
+
 import { faSquare } from "@fortawesome/free-regular-svg-icons";
 import {
   faSearch,

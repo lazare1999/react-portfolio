@@ -1,3 +1,5 @@
+// @flow
+
 import { NavigationBar } from "./navigationBar";
 import { Body } from "./body";
 import React, {useRef} from "react";

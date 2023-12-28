@@ -1,3 +1,5 @@
+// @flow
+
 import { UbuntuTerminal } from "./ubuntuTerminal";
 import React, {useRef} from "react";
 
