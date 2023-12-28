@@ -5,12 +5,15 @@ import {
     BrowserRouter as Router
 } from "react-router-dom";
 import {FaArrowAltCircleUp} from "react-icons/fa";
-import LanguageSelector from "./components/languageSelector";
-import AppRoutes from "./components/routes";
-import Footer from "./components/footer";
-import "./components/styles/styles.css";
 import {Analytics} from '@vercel/analytics/react';
 import {SpeedInsights} from '@vercel/speed-insights/react';
+import "./components/styles/styles.css";
+
+
+const Footer = React.lazy(() => import('./components/footer'));
+const LanguageSelector = React.lazy(() => import('./components/languageSelector'));
+const AppRoutes = React.lazy(() => import('./components/routes'));
+
 
 function App() {
 
