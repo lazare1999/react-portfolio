@@ -54,35 +54,35 @@
     "description": "ვებ დეველოპმენტის სქილები"
   }],
   "dataPortfolio": [{
-    "img": "NLP.png",
+    "img": "NLP.jpg",
     "description": "Back-End-ი სისტემების სტრუქტურული ანალიზის ლოგიკურ-ალბათობითი მეთოდებისთვის",
     "link": "https://github.com/lazare1999/saos-app"
   },{
-    "img": "chess.webp",
+    "img": "chess.jpg",
     "description": "ჭადრაკის აპლიკაცია C++",
     "link": "https://github.com/lazare1999/chess"
   },{
-    "img": "Android.webp",
+    "img": "Android.jpg",
     "description": "ანდროიდის კურსი",
     "link": "https://github.com/lazare1999/android-course"
   },{
-    "img": "Python.png",
+    "img": "Python.jpg",
     "description": "პითონის კურსი",
     "link": "https://github.com/lazare1999/py"
   },{
-    "img": "R.jpeg",
+    "img": "R.jpg",
     "description": "R-ის კურსი",
     "link": "https://github.com/lazare1999/R"
   },{
-    "img": "JavaFX.png",
+    "img": "JavaFX.jpg",
     "description": "Elgamal კრიპტოგრაფიის ალგორითმის რეალიზაცია",
     "link": "https://github.com/lazare1999/elgamal-javafx"
   },{
-    "img": "github_actions.png",
+    "img": "github_actions.jpg",
     "description": "წარმოქმნის პოდკასტის არხებს YAML-ის გამოყენებით",
     "link": "https://github.com/lazare1999/podcast-generator"
   },{
-    "img": "flutter.png",
+    "img": "flutter.jpg",
     "description": "Geo Couriers პროექტის Front-End-ი",
     "link": "https://github.com/lazare1999/geocourier-web"
   },{
@@ -90,23 +90,23 @@
     "description": "ჩემი სამაგისტრო ნაშრომი ინფორმატიკაში",
     "link": "https://github.com/lazare1999/master-thesis"
   },{
-    "img": "springboot.png",
+    "img": "springboot.jpg",
     "description": "Geo Couriers პროექტის Back-End-ი",
     "link": "https://github.com/lazare1999/couriers-service"
   },{
-    "img": "React.png",
+    "img": "React.jpg",
     "description": "React Native სატესტო აპლიკაცია",
     "link": "https://github.com/lazare1999/my-mobile-app"
   },{
-    "img": "Java.png",
+    "img": "Java.jpg",
     "description": "ორთოგონალიზაციის ალგორითმის რეალიზაცია Javafx-ში",
     "link": "https://github.com/lazare1999/orthogonalization-javafx"
   },{
-    "img": "django-faster.webp",
+    "img": "django-faster.jpg",
     "description": "Py Web. \"py\" კურსის ნაწილი",
     "link": "https://github.com/lazare1999/py_web"
   },{
-    "img": "fast_power.png",
+    "img": "fast_power.jpg",
     "description": "სწრაფი ახარისხების ალგორითმი",
     "link": "https://github.com/lazare1999/fast-powering-algorithm"
   },{

@@ -54,35 +54,35 @@
     "description": "cool skills of web development"
   }],
   "dataPortfolio": [{
-    "img": "NLP.png",
+    "img": "NLP.jpg",
     "description": "Back-End software for logical-probabilistic methods of structural analysis of systems",
     "link": "https://github.com/lazare1999/saos-app"
   },{
-    "img": "chess.webp",
+    "img": "chess.jpg",
     "description": "Chess app made in C++",
     "link": "https://github.com/lazare1999/chess"
   },{
-    "img": "Android.webp",
+    "img": "Android.jpg",
     "description": "Android course",
     "link": "https://github.com/lazare1999/android-course"
   },{
-    "img": "Python.png",
+    "img": "Python.jpg",
     "description": "Python course",
     "link": "https://github.com/lazare1999/py"
   },{
-    "img": "R.jpeg",
+    "img": "R.jpg",
     "description": "R course",
     "link": "https://github.com/lazare1999/R"
   },{
-    "img": "JavaFX.png",
+    "img": "JavaFX.jpg",
     "description": "Elgamal cryptography algorithm realization",
     "link": "https://github.com/lazare1999/elgamal-javafx"
   },{
-    "img": "github_actions.png",
+    "img": "github_actions.jpg",
     "description": "Generates podcast feeds using YAML, hosted by GitHub pages",
     "link": "https://github.com/lazare1999/podcast-generator"
   },{
-    "img": "flutter.png",
+    "img": "flutter.jpg",
     "description": "Geo Couriers projects Front-End",
     "link": "https://github.com/lazare1999/geocourier-web"
   },{
@@ -90,23 +90,23 @@
     "description": "My master thesis in Informatics",
     "link": "https://github.com/lazare1999/master-thesis"
   },{
-    "img": "springboot.png",
+    "img": "springboot.jpg",
     "description": "Geo Couriers projects Back-End",
     "link": "https://github.com/lazare1999/couriers-service"
   },{
-    "img": "React.png",
+    "img": "React.jpg",
     "description": "React Native test app",
     "link": "https://github.com/lazare1999/my-mobile-app"
   },{
-    "img": "Java.png",
+    "img": "Java.jpg",
     "description": "Orthogonalization algorithm realization in Javafx",
     "link": "https://github.com/lazare1999/orthogonalization-javafx"
   },{
-    "img": "django-faster.webp",
+    "img": "django-faster.jpg",
     "description": "Py Web. Part of the \"py\" course",
     "link": "https://github.com/lazare1999/py_web"
   },{
-    "img": "fast_power.png",
+    "img": "fast_power.jpg",
     "description": "Fast powering algorithm",
     "link": "https://github.com/lazare1999/fast-powering-algorithm"
   },{
