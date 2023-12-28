@@ -10,7 +10,7 @@ const config = {
 };
 
 /** The Ubuntu Terminal component */
-export const UbuntuTerminal = () => {
+export const UbuntuTerminal = React.memo(() => {
   const ubuntuRef = useRef<any>();
 
   return (
@@ -21,4 +21,4 @@ export const UbuntuTerminal = () => {
       <Body config={config}/>
     </div>
   );
-};
+});

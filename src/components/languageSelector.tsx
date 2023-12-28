@@ -5,7 +5,7 @@ import geo from "../assets/geo.jpg";
 import usa from "../assets/usa.jpg";
 import i18n from "../conf/i18n";
 
-const LanguageSelector = () => {
+const LanguageSelector = React.memo(({}) => {
 
     const changeLanguage = ({languageCode}: { languageCode: any }) => {
         i18n.changeLanguage(languageCode).then(r => r);
@@ -19,6 +19,6 @@ const LanguageSelector = () => {
             </div>
         </div>
     );
-};
+});
 
 export default LanguageSelector;

@@ -1,9 +1,9 @@
 // @flow
 
-import React from 'react';
+import React, {lazy} from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import './conf/i18n';
+const App = lazy(() => import('./App'));
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(

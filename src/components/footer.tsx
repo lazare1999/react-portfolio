@@ -4,7 +4,7 @@ import React from 'react';
 import {useTranslation} from "react-i18next";
 import {contactConfig} from "./contentOption";
 
-const Footer = () => {
+const Footer = React.memo(({}) => {
      const { t} = useTranslation();
 
     return (
@@ -30,6 +30,6 @@ const Footer = () => {
             </div>
         </footer>
     );
-};
+});
 
 export default Footer;

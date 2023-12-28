@@ -7,7 +7,7 @@ import {SocialIcons} from "../socialicons";
 import YourLocalImage from "../../assets/lazo.jpg"
 import {useTranslation} from "react-i18next";
 
-export const Home = () => {
+export const Home = React.memo(() => {
 
     const { t} = useTranslation();
 
@@ -51,4 +51,4 @@ export const Home = () => {
             </section>
         </HelmetProvider>
     );
-};
+});

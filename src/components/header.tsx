@@ -5,7 +5,7 @@ import {useTranslation} from "react-i18next";
 import {Link} from "react-scroll/modules";
 import LanguageSelector from "./languageSelector";
 
-const HeaderMain = () => {
+const HeaderMain = React.memo(({}) => {
 
   const { t} = useTranslation();
 
@@ -39,6 +39,6 @@ const HeaderMain = () => {
       </header>
     </>
   );
-};
+});
 
 export default HeaderMain;

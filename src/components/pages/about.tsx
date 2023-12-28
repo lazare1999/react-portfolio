@@ -8,7 +8,7 @@ import {useTranslation} from "react-i18next";
 import {UbuntuApplication} from "../ubuntu_terminal/ubuntuApplication";
 
 
-export const About = () => {
+export const About = React.memo(() => {
   const { t} = useTranslation();
 
   const obj = t('workTimeline', { returnObjects: true });
@@ -70,4 +70,4 @@ export const About = () => {
 
     </HelmetProvider>
   );
-};
+});

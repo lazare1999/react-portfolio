@@ -7,7 +7,7 @@ interface props {
 }
 
 /** Body of the Ubuntu terminal — where the commands are executed */
-export const Body = (props: props) => {
+export const Body = React.memo((props: props) => {
   const [enteredInputs, setEnteredInputs] = useState<string[]>([]);
   const [terminalInput, setInput] = useState<string>('Type "help" for more info.');
   const inputRef = useRef<any>();
@@ -26,66 +26,66 @@ export const Body = (props: props) => {
     const submitInput = () => {
       const lowerCasedInput = terminalInput.trim().toLowerCase();
 
-      if (lowerCasedInput === 'clear') {
-        setEnteredInputs([]);
-      } else if (lowerCasedInput === 'help') {
-        // Provide help information or execute specific logic for the 'help' command
-        setEnteredInputs([...enteredInputs, 'Hello there. You can use following commands: echo; clear; help; ls; pwd; whoami; date; cat; cd; mkdir; touch; rm; rmdir; mv; cp; sudo; apt-get; exit;']);
-      } else if (lowerCasedInput.startsWith('echo ')) {
-        const echoedText = terminalInput.substring(5);
-        setEnteredInputs([...enteredInputs, echoedText]);
-      } else if (lowerCasedInput === 'ls') {
-        // Simulate 'ls' command
-        setEnteredInputs([...enteredInputs, 'home.tsx  about.tsx  projects.tsx  contact.tsx']);
-      } else if (lowerCasedInput === 'pwd') {
-        // Simulate 'pwd' command
-        setEnteredInputs([...enteredInputs, '/home/lazare']);
-      } else if (lowerCasedInput === 'whoami') {
-        // Simulate 'whoami' command
-        setEnteredInputs([...enteredInputs, 'lazare']);
-      } else if (lowerCasedInput === 'date') {
-        // Simulate 'date' command
-        setEnteredInputs([...enteredInputs, new Date().toString()]);
-      } else if (lowerCasedInput.startsWith('cat ')) {
-        // Simulate 'cat' command
-        const fileName = terminalInput.substring(4);
-        setEnteredInputs([...enteredInputs, `Content of ${fileName}...`]);
-      } else if (lowerCasedInput.startsWith('cd ')) {
-        // Simulate 'cd' command
-        const directory = terminalInput.substring(3);
-        // Handle changing directory (you may need to track the current directory state)
-        setEnteredInputs([...enteredInputs, `Change directory to ${directory}`]);
-      } else if (lowerCasedInput.startsWith('mkdir ')) {
-        const folderName = terminalInput.substring(6);
-        setEnteredInputs([...enteredInputs, `Create folder: ${folderName}`]);
-      } else if (lowerCasedInput.startsWith('touch ')) {
-        const fileName = terminalInput.substring(6);
-        setEnteredInputs([...enteredInputs, `Create file: ${fileName}`]);
-      } else if (lowerCasedInput.startsWith('rm ')) {
-        const fileName = terminalInput.substring(3);
-        setEnteredInputs([...enteredInputs, `Remove file: ${fileName}`]);
-      } else if (lowerCasedInput.startsWith('rmdir ')) {
-        const folderName = terminalInput.substring(6);
-        setEnteredInputs([...enteredInputs, `Remove folder: ${folderName}`]);
-      } else if (lowerCasedInput.startsWith('mv ')) {
-        const [source, destination] = terminalInput.substring(3).split(' ');
-        setEnteredInputs([...enteredInputs, `Move ${source} to ${destination}`]);
-      } else if (lowerCasedInput.startsWith('cp ')) {
-        const [source, destination] = terminalInput.substring(3).split(' ');
-        setEnteredInputs([...enteredInputs, `Copy ${source} to ${destination}`]);
-      } else if (lowerCasedInput.startsWith('sudo ')) {
-        const command = terminalInput.substring(5);
-        setEnteredInputs([...enteredInputs, `Run sudo command: ${command}`]);
-      } else if (lowerCasedInput.startsWith('apt-get ')) {
-        const packageCommand = terminalInput.substring(8);
-        setEnteredInputs([...enteredInputs, `Run apt-get command: ${packageCommand}`]);
-      } else if (lowerCasedInput === 'exit') {
-        window.location.reload();
-      } else {
-        // Default behavior: add the input to the list
-        const inputs = [...enteredInputs, terminalInput];
-        setEnteredInputs(inputs);
-      }
+      const commandHandlers: Record<string, () => void> = {
+        'clear': () => setEnteredInputs([]),
+        'help': () => setEnteredInputs([...enteredInputs, 'Hello there. You can use following commands: echo; clear; help; ls; pwd; whoami; date; cat; cd; mkdir; touch; rm; rmdir; mv; cp; sudo; apt-get; exit;']),
+        'ls': () => setEnteredInputs([...enteredInputs, 'home.tsx  about.tsx  projects.tsx  contact.tsx']),
+        'pwd': () => setEnteredInputs([...enteredInputs, '/home/lazare']),
+        'whoami': () => setEnteredInputs([...enteredInputs, 'lazare']),
+        'date': () => setEnteredInputs([...enteredInputs, new Date().toString()]),
+        'echo': () => {
+          const echoedText = terminalInput.substring(5);
+          setEnteredInputs([...enteredInputs, echoedText]);
+        },
+        'cat': () => {
+          const fileName = terminalInput.substring(4);
+          setEnteredInputs([...enteredInputs, `Content of ${fileName}...`]);
+        },
+        'cd': () => {
+          const directory = terminalInput.substring(3);
+          setEnteredInputs([...enteredInputs, `Change directory to ${directory}`]);
+        },
+        'mkdir': () => {
+          const folderName = terminalInput.substring(6);
+          setEnteredInputs([...enteredInputs, `Create folder: ${folderName}`]);
+        },
+        'touch': () => {
+          const fileName = terminalInput.substring(6);
+          setEnteredInputs([...enteredInputs, `Create file: ${fileName}`]);
+        },
+        'rm': () => {
+          const fileName = terminalInput.substring(3);
+          setEnteredInputs([...enteredInputs, `Remove file: ${fileName}`]);
+        },
+        'rmdir': () => {
+          const folderName = terminalInput.substring(6);
+          setEnteredInputs([...enteredInputs, `Remove folder: ${folderName}`]);
+        },
+        'mv': () => {
+          const [source, destination] = terminalInput.substring(3).split(' ');
+          setEnteredInputs([...enteredInputs, `Move ${source} to ${destination}`]);
+        },
+        'cp': () => {
+          const [source, destination] = terminalInput.substring(3).split(' ');
+          setEnteredInputs([...enteredInputs, `Copy ${source} to ${destination}`]);
+        },
+        'sudo': () => {
+          const command = terminalInput.substring(5);
+          setEnteredInputs([...enteredInputs, `Run sudo command: ${command}`]);
+        },
+        'apt-get': () => {
+          const packageCommand = terminalInput.substring(8);
+          setEnteredInputs([...enteredInputs, `Run apt-get command: ${packageCommand}`]);
+        },
+        'exit': () => window.location.reload(),
+        'default': () => {
+          const inputs = [...enteredInputs, terminalInput];
+          setEnteredInputs(inputs);
+        },
+      };
+
+      const handleCommand = commandHandlers[lowerCasedInput] || commandHandlers['default'];
+      handleCommand();
 
       setInput("");
     };
@@ -146,4 +146,4 @@ export const Body = (props: props) => {
       </div>
     </div>
   );
-};
+});

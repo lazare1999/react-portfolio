@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { socialProfiles } from "./contentOption";
 
-export const SocialIcons = () => {
+export const SocialIcons = React.memo(({}) => {
   return (
     <div className="stick_follow_icon">
         {socialProfiles.github && (
@@ -34,4 +34,4 @@ export const SocialIcons = () => {
         )}
     </div>
   );
-};
+});

@@ -10,13 +10,14 @@ import {
   faCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 
 interface props {
     config: { name: string; computerName: string };
 }
 
 /** Navigation bar for the Ubuntu terminal */
-export const NavigationBar = (props: props) => {
+export const NavigationBar= React.memo((props: props) => {
   const {
     config
   } = props;
@@ -66,4 +67,4 @@ export const NavigationBar = (props: props) => {
       </div>
     </div>
   );
-};
+});

@@ -7,7 +7,7 @@ import {contactConfig} from "../contentOption";
 import * as emailJs from "@emailjs/browser";
 import {useTranslation} from "react-i18next";
 
-export const ContactUs = () => {
+export const ContactUs = React.memo(() => {
 
   const { t} = useTranslation();
 
@@ -160,4 +160,4 @@ export const ContactUs = () => {
         </Container>
       </HelmetProvider>
   );
-};
+});

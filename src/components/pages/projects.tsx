@@ -3,8 +3,9 @@
 import {useTranslation} from "react-i18next";
 import {socialProfiles} from "../contentOption";
 import {Helmet, HelmetProvider} from "react-helmet-async";
+import React from "react";
 
-export const Projects = () => {
+export const Projects = React.memo(() => {
 
   const { t} = useTranslation();
   const obj = t('dataPortfolio', { returnObjects: true });
@@ -60,4 +61,4 @@ export const Projects = () => {
         </section>
       </HelmetProvider>
   );
-};
+});

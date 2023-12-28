@@ -3,7 +3,7 @@
 import { UbuntuTerminal } from "./ubuntuTerminal";
 import React, {useRef} from "react";
 
-export const UbuntuApplication =  () => {
+export const UbuntuApplication = React.memo(() => {
     const appRef = useRef(null);
 
     return (
@@ -12,4 +12,4 @@ export const UbuntuApplication =  () => {
             <UbuntuTerminal/>
         </div>
     );
-};
+});
