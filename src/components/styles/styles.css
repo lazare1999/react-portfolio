@@ -109,7 +109,7 @@ section {
   height: .8em;
 }
 
-.floating_button_up:hover {
+.floating-button:hover {
   transition: .3s ease;
   transform: scale(1.1);
 }
