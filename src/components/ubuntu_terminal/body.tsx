@@ -135,6 +135,7 @@ export const Body = React.memo((props: props) => {
       <div className="input">
         {generateLine()}
         <input
+            aria-label={terminalInput}
             id="terminal-input"
             className="terminal-input"
             type="text"

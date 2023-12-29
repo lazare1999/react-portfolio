@@ -25,7 +25,7 @@ const HeaderMain = React.memo(({}) => {
             </Link>
           </div>
           <div>
-            <Link activeClass="active" smooth spy to="portfolio">
+            <Link activeClass="active" smooth spy to="projects">
               {t('main.projects')}
             </Link>
           </div>

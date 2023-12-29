@@ -1,21 +1,23 @@
-// @flow
-
-import React from "react";
-import geo from "../assets/geo.jpg";
-import usa from "../assets/usa.jpg";
+import React, { useState } from "react";
 import i18n from "../conf/i18n";
+import {Globe} from "react-feather";
 
-const LanguageSelector = React.memo(({}) => {
+const LanguageSelector = React.memo(() => {
+    const [currentLanguage, setCurrentLanguage] = useState('en'); // Initial language code
 
-    const changeLanguage = ({languageCode}: { languageCode: any }) => {
-        i18n.changeLanguage(languageCode).then(r => r);
+    const toggleLanguage = async () => {
+        const newLanguage = currentLanguage === 'ge' ? 'en' : 'ge'; // Toggle between 'ge' and 'en'
+        setCurrentLanguage(newLanguage);
+        i18n.changeLanguage(newLanguage).then(r => r);
     };
 
     return (
         <div className="floating_button_language">
             <div>
-                <img className="language_image" src={geo} loading="lazy" alt="English" onClick={() => changeLanguage({languageCode: 'ge'})}/>
-                <img className="language_image" src={usa} loading="lazy" alt="English" onClick={() => changeLanguage({languageCode: 'en'})}/>
+                <Globe
+                    className="language_icon"
+                    onClick={toggleLanguage}
+                />
             </div>
         </div>
     );

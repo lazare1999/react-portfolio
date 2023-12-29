@@ -30,7 +30,7 @@ export const Projects = React.memo(() => {
 
   return (
       <HelmetProvider>
-        <section id="portfolio" className="About-header">
+        <section id="projects" className="About-header">
           <Helmet>
             <meta charSet="utf-8"/>
             <title>{t('title')}</title>
@@ -44,7 +44,7 @@ export const Projects = React.memo(() => {
             {array.map((data: any, i) => {
               return (
                   <div key={i} className="po_item">
-                    <img src={require('../../assets/' + data.img)} alt="" loading="lazy"/>
+                    <img src={require('../../assets/' + data.img)} alt="" loading="lazy" width="100%" height="100%"/>
                     <div className="content">
                       <p>{data.description}</p>
                       <a href={data.link}>{t('view_project')}</a>

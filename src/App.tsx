@@ -4,7 +4,7 @@ import React, {Suspense} from 'react';
 import {
     BrowserRouter as Router
 } from "react-router-dom";
-import {FaArrowAltCircleUp} from "react-icons/fa";
+import {ArrowUpCircle} from "react-feather";
 import {Analytics} from '@vercel/analytics/react';
 import {SpeedInsights} from '@vercel/speed-insights/react';
 import "./components/styles/styles.css";
@@ -41,7 +41,7 @@ export default function WrappedApp() {
 
             <App/>
             <div className="floating_button_up">
-                <FaArrowAltCircleUp className="floating-button" onClick={scrollToTop}/>
+                <ArrowUpCircle className="floating-button" onClick={scrollToTop}/>
             </div>
             <LanguageSelector/>
             <Analytics mode={'production'} debug={false}/>

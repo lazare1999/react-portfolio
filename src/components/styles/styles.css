@@ -1,7 +1,5 @@
 /*@flow*/
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-
 :root {
   --bg-color: #0c0c0c;
   --primary-color: #0d0d0d;
@@ -62,9 +60,15 @@ section {
   fill: var(--text-color);
 }
 
+.social_icons:hover {
+  fill: rgba(33, 150, 243, 0.5);
+  transition: .3s ease;
+  transform: scale(1.1);
+}
+
 @media only screen and (max-width: 991px) {
   body {
-    padding-top: 3em;
+    padding-top: 4em;
   }
   .stick_follow_icon {
     width: auto;
@@ -77,31 +81,37 @@ section {
   }
 }
 
-.floating_button_language {
+.floating_button_language svg {
   position: fixed;
-  top: 2%;
+  top: 1%;
   left: 1%;
+  width: .8em;
+  height: .8em;
 }
 
-.language_image {
-  height: 1.4rem;
-  width: 2.5rem;
-  background: none;
+.language_icon {
   border: none;
-  margin: 0 .1rem;
+  border-radius: 50%;
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-  border-radius: .05rem
+  font-size: 3em;
 }
 
-.language_image:hover {
-  transform: scale(1.2);
+.language_icon:hover {
+  transition: .3s ease;
+  transform: scale(1.1);
 }
 
-.floating_button_up {
+.floating_button_up svg {
   position: fixed;
   bottom: 1%;
   right: 1%;
+  width: .8em;
+  height: .8em;
+}
+
+.floating_button_up:hover {
+  transition: .3s ease;
+  transform: scale(1.1);
 }
 
 .floating-button {
@@ -402,14 +412,17 @@ button.btn.ac_btn:hover {
     height: auto!important;
   }
   .intro_sec .text,
-  .intro_sec .h_bg-image {
+  .intro_sec {
     width: 100%;
   }
   .intro_sec .intro {
     width: 100%;
   }
-  .intro_sec .h_bg-image {
+  .intro_sec {
     height: 100vh;
+  }
+  .intro_sec .h_bg-image {
+      display: none;
   }
 }
 
@@ -497,7 +510,7 @@ button.btn.ac_btn:hover {
 
 .ubuntu__navigation-bar {
   height: 2.5em;
-  background-color: #312f30;
+  background-color: #212020;
   color: #ffffff;
   padding: 0 .4em;
 
@@ -515,7 +528,7 @@ button.btn.ac_btn:hover {
   cursor: default;
 
   background: #300a24;
-  color: #d4f9ee;
+  color: lightyellow;
 
 }
 
@@ -530,14 +543,13 @@ button.btn.ac_btn:hover {
   justify-self: end;
   display: grid;
   grid-template-columns: repeat(4, 1fr) min-content;
-  column-gap: 1em;
-
+  column-gap: .6em;
   justify-items: center;
   align-items: center;
 }
 
 .command__green {
-  color: rgba(33, 150, 243, 0.5);
+  color: greenyellow;
 }
 .command__white {
   color: #ffffff;
@@ -551,23 +563,37 @@ button.btn.ac_btn:hover {
   height: 1em;
 }
 
-.close {
-  color: #312f30;
-}
 
 .custom:hover .close {
   color: #e25728;
 }
 
 .raised {
+  height: 1em;
   background-color: #403e3f;
   border: 1px solid #282626;
-  border-radius: .5rem;
-  padding: 5px 8px;
+  border-radius: .3rem;
+  padding: .4em .2em;
+}
+
+.min-square:hover {
+  background-color: #282626 !important;
+}
+
+.min:hover {
+  background-color: #282626 !important;
+}
+
+.close:hover {
+  background-color: #282626 !important;
+}
+
+.max-square:hover {
+  background-color: #282626 !important;
 }
 
 .raised:hover {
-  background-color: #282626;
+  background-color: #282626 !important;
 }
 
 .terminal-input {
@@ -585,11 +611,13 @@ button.btn.ac_btn:hover {
   }
 }
 
-.max-square, .min-square, .min {
+.max-square, .min-square, .min, .close {
+  height: 1em;
+  width: .9em;
   padding: 5px 8px;
-  &:hover {
-    background-color: #403e3f;
-  }
+  background-color: #403e3f;
+  border: 1px solid #282626;
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 991px) {
@@ -609,7 +637,6 @@ button.btn.ac_btn:hover {
     display: none;
   }
   .ubuntu__body {
-
     font-size: medium;
   }
   .terminal-input {
@@ -643,10 +670,6 @@ button.btn.ac_btn:hover {
 }
 
 .po_item img {
-  min-width: 100%;
-  max-width: 100%;
-  min-height: 13em;
-  max-height: 13em;
   border-radius: .5rem;
 }
 
@@ -662,7 +685,7 @@ button.btn.ac_btn:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-//border: 1px solid black;
+  border: 1px solid black;
   border-radius: .5rem;
   font-size: 20px;
 }

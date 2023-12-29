@@ -1,10 +1,9 @@
 // @flow
 
-import React from "react";
+import React, {useEffect} from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import {SocialIcons} from "../socialicons";
-import YourLocalImage from "../../assets/lazo.jpg"
 import {useTranslation} from "react-i18next";
 
 export const Home = React.memo(() => {
@@ -43,10 +42,6 @@ export const Home = React.memo(() => {
                             </div>
                         </div>
                     </div>
-                    <div
-                        className="h_bg-image order-1 order-lg-2 h-100"
-                        style={{ backgroundImage: `url(${YourLocalImage})` }}
-                    ></div>
                 </div>
             </section>
         </HelmetProvider>

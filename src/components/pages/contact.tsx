@@ -1,13 +1,40 @@
 // @flow
 
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Alert } from "react-bootstrap";
 import {contactConfig} from "../contentOption";
-import * as emailJs from "@emailjs/browser";
 import {useTranslation} from "react-i18next";
 
+declare namespace Email {
+    interface EmailData {
+        SecureToken: any;
+        Host: any;
+        Username: string;
+        Password: any;
+        To: any;
+        From: any;
+        Subject: any;
+        Body: any;
+        Port: number;
+    }
+
+    function send(email: EmailData): Promise<string>;
+}
+
 export const ContactUs = React.memo(() => {
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://smtpjs.com/v3/smtp.js';
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   const { t} = useTranslation();
 
@@ -24,48 +51,28 @@ export const ContactUs = React.memo(() => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     setFormData({ loading: true, show: false, alertMessage: "", variant: "", email: "", name: "", message: "" });
-
-    const templateParams = {
-      from_name: formData.email,
-      user_name: formData.name,
-      to_name: contactConfig.YOUR_EMAIL,
-      message: formData.message,
-    };
-
-    emailJs
-      .send(
-        contactConfig.YOUR_SERVICE_ID,
-        contactConfig.YOUR_TEMPLATE_ID,
-        templateParams,
-        contactConfig.YOUR_USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setFormData({
-            email: "",
-            name: "",
-            message: "",
-            loading: false,
-            alertMessage: "SUCCESS! ,Thank you for your message",
-            variant: "success",
-            show: true,
-          });
-        },
-        (error) => {
-          console.log(error.text);
-          setFormData({
-            email: "",
-            name: "",
-            message: "",
-            loading: false,
-            alertMessage: `Failed to send!, ${error.text}`,
-            variant: "danger",
-            show: true,
-          });
-          document.getElementsByClassName("co_alert")[0].scrollIntoView();
-        }
+      Email.send({
+          SecureToken: process.env.REACT_APP_SECURE_TOKEN,
+          Host: process.env.REACT_APP_SECURE_HOST,
+          Username: contactConfig.YOUR_EMAIL,
+          Password: process.env.REACT_APP_EMAIL_PASSWORD,
+          To: contactConfig.YOUR_EMAIL,
+          From: formData.email,
+          Subject: formData.name,
+          Body: formData.message,
+          Port: 2525,
+      }).then(
+          message => setFormData({
+              email: "",
+              name: "",
+              message: "",
+              loading: false,
+              alertMessage: message,
+              variant: "",
+              show: true,
+          })
       );
+
   };
 
   const handleChange = (e:any) => {
@@ -133,6 +140,7 @@ export const ContactUs = React.memo(() => {
                     />
                   </div>
                   <textarea
+                      aria-label={t("message")}
                       className="form-control rounded-0"
                       id="message"
                       name="message"

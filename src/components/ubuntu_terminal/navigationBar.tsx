@@ -1,15 +1,6 @@
 // @flow
 
-import { faSquare } from "@fortawesome/free-regular-svg-icons";
-import {
-  faSearch,
-  faBars,
-  faMinus,
-  faTimes,
-  faPlus,
-  faCircle,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { PlusSquare, Search, Menu, Minus, Square, X} from "react-feather";
 import React from "react";
 
 interface props {
@@ -26,43 +17,21 @@ export const NavigationBar= React.memo((props: props) => {
 
   return (
     <div className="ubuntu__navigation-bar">
-      {/** Left side of the navigation bar */}
       <div className="nb__left">
-        <FontAwesomeIcon
-          icon={faPlus}
-          size="sm"
-          className="raised"
-        />
+        <PlusSquare className="raised"/>
       </div>
 
-      {/** Center of the navigation bar */}
       <div className="nb__center">{`${name}@${computerName}:~`}</div>
 
-      {/** Right side of the navigation bar */}
       <div className="nb__right">
-        <FontAwesomeIcon icon={faSearch} size="sm" className="raised" />
-        <FontAwesomeIcon icon={faBars} size="sm" className="raised" />
-        <FontAwesomeIcon
-          icon={faMinus}
-          size="sm"
-          className="min"
-        />
+        <Search className="raised" />
+        <Menu className="raised" />
+        <Minus className="min"/>
         <div>
-            <FontAwesomeIcon
-                icon={faSquare}
-                size="sm"
-                className="max-square"
-            />
+            <Square className="max-square"/>
         </div>
-
-        {/** Stacked FontAwesome icons for the "Close" button */}
-        <span className="fa-stack custom">
-          <FontAwesomeIcon
-            icon={faCircle}
-            size="xs"
-            className="fa-stack-2x close"
-          />
-          <FontAwesomeIcon icon={faTimes} size="xs" className="fa-stack-1x" />
+        <span>
+          <X className="close"/>
         </span>
       </div>
     </div>
