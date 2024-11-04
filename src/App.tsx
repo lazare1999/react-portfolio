@@ -5,8 +5,6 @@ import {
     BrowserRouter as Router
 } from "react-router-dom";
 import {ArrowUpCircle} from "react-feather";
-import {Analytics} from '@vercel/analytics/react';
-import {SpeedInsights} from '@vercel/speed-insights/react';
 import "./components/styles/styles.css";
 
 
@@ -34,8 +32,6 @@ function scrollToTop() {
 
 export default function WrappedApp() {
 
-
-
     return (
         <Suspense fallback="...">
 
@@ -44,8 +40,6 @@ export default function WrappedApp() {
                 <ArrowUpCircle className="floating-button" onClick={scrollToTop}/>
             </div>
             <LanguageSelector/>
-            <Analytics mode={'production'} debug={false}/>
-            <SpeedInsights />
         </Suspense>
     )
 }
